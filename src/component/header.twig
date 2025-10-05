@@ -1,0 +1,11 @@
+<header id="header" class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <nav class="header__nav">
+        {% for nav in header %}
+        <a href="{{ nav.link }}" class="header__nav-item {% if active_nav == nav.link %}active{% endif %}">{{ nav.name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </div>
+</header>

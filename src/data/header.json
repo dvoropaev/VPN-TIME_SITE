@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Главная",
+    "link": "/"
+  },
+  {
+    "name": "Faq",
+    "link": "/faq"
+  },
+  {
+    "name": "Правила",
+    "link": "/rules"
+  },
+  {
+    "name": "Инструкции",
+    "link": "/instructions"
+  },
+  {
+    "name": "Мерч",
+    "link": "/merch"
+  }
+]
