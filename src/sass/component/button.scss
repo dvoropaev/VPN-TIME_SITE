@@ -1,0 +1,56 @@
+.btn{
+  &-green{
+    position: relative;
+
+    display: inline-flex;
+    gap: 1.3rem;
+    align-items: center;
+
+    padding: 1.4rem 2.2rem 1.2rem;
+    border-radius: 10rem;
+
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.7rem;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+
+    background-color: #00C234;
+  }
+
+  .icon{
+    &-telegram{
+      display: inline-flex;
+      width: 2.6rem;
+      height: 2.2rem;
+      background-image: url("../../img/ico/telegram.png");
+    }
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #034A6D;
+  }
+}
+
+
+@media (hover: hover){
+  .btn{
+    &-green{
+      transition: background-color 0.4s ease-in-out;
+
+      &:hover{
+        background-color: #008824;
+      }
+
+      &:active {
+        color: #fff;
+        background-color: #034A6D;
+      }
+
+    }
+  }
+}

@@ -5,17 +5,26 @@
 {% extends '@layout/main.twig' %}
 
 {% block content %}
-
-  <div class="hero">
-
-
-    <div class="hero__bg-forest">
-      {# <img src="/src/img/bg/bg-forest.png" alt="vpn time" height="281"> #}
+  <div class="container">
+    <div class="hero">
+        <div class="hero__image">
+          <img src="/src/img/hero/vpn-time.png" alt="vpn time" height="159">
+        </div>
     </div>
-
-    <div class="container">
-      <div class="hero__image">
-        <img src="/src/img/hero/vpn-time.png" alt="vpn time" height="159">
+    <div class="home-info">
+      <div class="home-info__wrapper">
+        <div class="title">Кто такой этот ваш VPN-Time?</div>
+        <div class="home-info__content">
+          <p>VPN-Time&nbsp;&mdash; это сервис, который позволяет использовать защищённый интернет без абонентской платы.</p>
+          <p>Мы&nbsp;работаем по&nbsp;принципу pay‑as‑you‑go: покупаете нужное количество часов и&nbsp;тратите их&nbsp;когда удобно.</p>
+          <p class="text-700">Никаких ежемесячных платежей!</p>
+        </div>
+        <a href="#" class="btn btn-green" target="_blank">
+          <span class="icon icon-telegram">
+            {# <img src="/src/img/ico/telegram.png" alt=""> #}
+          </span>
+          <span class="text">Попробовать бесплатно</span>
+        </a>
       </div>
     </div>
   </div>
