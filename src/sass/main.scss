@@ -1,3 +1,6 @@
+/* ==========  Config  ========== */
+@import "config/_all";
+
 /* ==========  Global  ========== */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -20,4 +23,27 @@ html {
 body {
   font-family: var(--font);
   font-size: 1.6rem;
+  background: linear-gradient(180deg, #26D6FD 0%, #0035BA 100%);
 }
+
+.container{
+  width: 60.5rem;
+  margin: 0 auto;
+}
+
+
+// @media (hover: hover){
+
+// }
+
+// @media (width <= 767px){
+
+// }
+
+
+// @media (width >= 768px){
+
+// }
+
+
+@import "component/header";
