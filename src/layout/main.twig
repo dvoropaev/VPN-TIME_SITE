@@ -1,4 +1,4 @@
-{% set title = title is not defined or title is null ? APP_NAME_FORMATTED : title ~ ' - ' ~ APP_NAME_FORMATTED %}
+{% set title = title is not defined or title is null ? APP_NAME_FORMATTED : title %}
 {% set locale = meta.locale|default('en-US') %}
 {% set description = meta.description|default(APP_DESCRIPTION) %}
 {% set keywords = meta.keywords|default(APP_KEYWORDS) %}
@@ -57,25 +57,24 @@
 </head>
 
 <body>
-  <!-- Handle theme data attributes -->
-  <script src="/data-theme.js"></script>
+  <div class="page{{ page_class ? ' ' ~ page_class }}">
+    <!-- Page header -->
+    {% block header %}
+    {% include '@component/header.twig' %}
+    {% endblock %}
 
-  <!-- Page header -->
-  {% block header %}
-  {% include '@component/header.twig' %}
-  {% endblock %}
+    <!-- Page content -->
+    {% block main %}
+    <main class="page-content">
+      {% block content %}{% endblock %}
+    </main>
+    {% endblock %}
 
-  <!-- Page content -->
-  {% block main %}
-  <main class="page-content">
-    {% block content %}{% endblock %}
-  </main>
-  {% endblock %}
-
-  <!-- Page footer -->
-  {% block footer %}
-  {% include '@component/footer.twig' %}
-  {% endblock %}
+    <!-- Page footer -->
+    {% block footer %}
+    {% include '@component/footer.twig' %}
+    {% endblock %}
+  </div>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+{% set title = 'home' %}
+{% set page_class = 'page-home' %}
 {% set active_nav = '/' %}
 
 {% extends '@layout/main.twig' %}
@@ -5,7 +7,11 @@
 {% block content %}
 
   <div class="hero">
-    <div class="hero__bg-forest"></div>
+
+
+    <div class="hero__bg-forest">
+      {# <img src="/src/img/bg/bg-forest.png" alt="vpn time" height="281"> #}
+    </div>
 
     <div class="container">
       <div class="hero__image">
