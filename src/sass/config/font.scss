@@ -1,9 +1,0 @@
-@font-face {
-	font-family: IstokWeb-Regular;
-	src: url('@/font/istokweb-regular/istokweb-regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('@/font/istokweb-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('@/font/istokweb-regular/istokweb-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('@/font/istokweb-regular/istokweb-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('@/font/istokweb-regular/istokweb-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('@/font/istokweb-regular/istokweb-regular.svg#istokweb-regular') format('svg'); /* Chrome < 4, Legacy iOS */
-}
