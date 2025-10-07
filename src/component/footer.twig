@@ -1,5 +1,9 @@
 <footer id="footer" class="footer section_offset">
   <div class="container">
-    Footer
+      <nav class="footer__nav">
+        {% for nav in header %}
+        <a href="{{ nav.link }}" class="footer__nav-item {% if active_nav == nav.link %}active{% endif %}">{{ nav.name }}</a>
+        {% endfor %}
+      </nav>
   </div>
 </footer>

@@ -1,4 +1,16 @@
 .page{
+  position: relative;
+
+    &::after{
+      content: "";
+
+      position: fixed;
+      z-index: -1;
+      inset: 0;
+
+      background: linear-gradient(180deg, #26D6FD 0%, #0035BA 100%);
+    }
+
     &-home{
       background-image: url("../../img/bg/bg-home.png");
       background-repeat: no-repeat;
@@ -7,8 +19,9 @@
 }
 
 .home{
-  &-info{
+  &__info{
     width: 60.5rem;
+    margin-bottom: 1.8rem;
     padding: 2rem 5rem;
     border-radius: 3.5rem;
 
@@ -16,8 +29,33 @@
 
     background-color: rgb(255 255 255 / 90%);
 
-    &__content{
-      padding-bottom: 2rem;
+    &-content{
+      padding-bottom: 1.8rem;
     }
+  }
+
+  &__info-price{
+    display: flex;
+
+    width: 60.5rem;
+    padding: 2rem 3.2rem 10rem;
+    border-radius: 3.5rem;
+
+    background: linear-gradient(180deg, #FFF 0%, rgb(153 153 153 / 0%) 100%);
+
+    .info{
+      flex-shrink: 0;
+      width: 27.2rem;
+    }
+
+    .info-text{
+      padding-bottom: 1.8rem;
+    }
+  }
+
+  &__footer-img{
+    margin-top: -34rem;
+    text-align: center;
+
   }
 }
