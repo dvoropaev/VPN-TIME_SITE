@@ -1,5 +1,9 @@
 # layout-vpn-time
 
+## node
+
+v24.12.0
+
 ## NVM
 
 
@@ -24,7 +28,7 @@ nvm uninstall 20.18.1 # Удалить конкретную версию
 nvm uninstall --lts # Удалить последнюю LTS-версию
 ```
 
-### Список версийСписок версий
+### Список версий
 ```bash
 nvm list # Список установленных версий
 nvm ls
@@ -35,14 +39,59 @@ nvm list available
 nvm list available # Список доступных для установки версий
 ```
 
-
-
-
 ### Выбор версии
 ```bash
 nvm use 24.12.0  # Выбрать для использования конкретную версию
 ```
 
 
-## inastall
+## inastall vite
+
+```bash
+npm create vite@latest
+```
+
+В package.json
+
+```
+...
+"dev": "vite --open",
+...
+```
+
+```bash 
+npm i -D sass
+```
+
+## Настраиваем работу с графикой
+
+```bash 
+npm install vite-plugin-image-optimizer sharp svgo --save-dev
+```
+
+```
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { defineConfig } from 'vite';
+
+export default defineConfig(() => {
+  return {
+    plugins: [
+      ViteImageOptimizer({
+        jpg: {
+          quality: 75
+        },
+        png: {
+          quality: 75
+        }
+      }),
+    ],
+  };
+});
+```
+
+## Готовим векторный спрайт
+
+```bash
+npm i vite-plugin-svg-spriter
+```
 
