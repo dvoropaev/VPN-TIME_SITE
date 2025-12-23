@@ -1,38 +1,24 @@
-import { defineConfig } from 'vite';
-import {resolve} from 'path';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import createSvgSpritePlugin from 'vite-plugin-svg-spriter';
+import { defineConfig } from "vite";
+import pugPlugin from "vite-plugin-pug";
+// import path from "path";
 
-const FRONT_PATH = 'src';
+import babel from "vite-plugin-babel";
 
 export default defineConfig({
-    root: "src",
-    plugins: [
-        createSvgSpritePlugin({
-            svgFolder: resolve(__dirname, `${FRONT_PATH}/assets/images/svg/`),
-            
-        }),
-      ViteImageOptimizer({
-        jpg: {
-          quality: 100
-        },
-        png: {
-          quality: 100
-        },
-        jpeg: {
-            quality: 100
-        }
-      }),
-    ],
-    build: {
-        minify: true,
-        cssMinify: true,
-       minifyCSS: 'lightningcss',
-       rollupOptions: {
-            input: {
-                index: resolve(__dirname, `${FRONT_PATH}/index.html`),
-                about: resolve(__dirname, `${FRONT_PATH}/pages/about/index.html`),
-            }
-        },
-   },
+  plugins: [
+    pugPlugin(),
+    babel({
+      babelConfig: {
+        presets: ["@babel/preset-env"],
+      },
+    }),
+  ],
+  root: "dist",
+  build: {
+    outDir: "dist",
+    emptyOutDir: false,
+  },
+  server: {
+    // open: "/example.html",
+  },
 });

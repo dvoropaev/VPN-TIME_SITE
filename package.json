@@ -4,18 +4,81 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "pug:compile": "pug src/templates/pages --out dist --pretty",
+    "js:compile": "babel src/js --out-file dist/js/main.js --source-maps",
+    "sass:compile": "sass src/sass/main.sass:dist/css/main.css",
+    "mkdir:dist": "shx mkdir -p dist && shx mkdir -p dist/js && shx mkdir -p dist/css",
+    "mkdir:img": "shx mkdir -p dist/img",
+    "pug": "npm run mkdir:dist && npm run pug:compile",
+    "js:build": "npm run mkdir:dist && npm run js:compile && npm run js:minify",
+    "js:minify": "terser dist/js/main.js -o dist/js/main.min.js --source-map",
+    "postcss:process": "postcss dist/css/main.css -o dist/css/main.css",
+    "styles:build": "npm run mkdir:dist && npm run sass:compile && npm run postcss:process",
+    "copy:fonts": "shx cp -R src/fonts dist/fonts",
+    "copy:img": "npm run mkdir:img && shx cp -R src/img/. dist/img",
+    "watch:pug": "npm run pug && pug src/templates/pages --out dist --pretty --watch",
+    "watch:js": "npm run js:build && babel src/js --out-file dist/js/main.js --source-maps --watch",
+    "watch:styles": "sass --watch src/sass/main.sass:dist/css/main.css --style=expanded --no-source-map | postcss dist/css/main.css -o dist/css/main.css --watch",
+    "watch:fonts": "chokidar 'src/fonts/**/*' -c 'npm run copy:fonts'",
+    "watch:img": "chokidar \"src/img/**/*\" -c \"npm run copy:img\" --initial",
+    "sprite": "node vite/svg-sprite.js",
+    "watch:sprite": "chokidar 'src/icons/**/*.svg' -c 'npm run sprite'",
+    "dev": "npm run sprite && concurrently \"npm run watch:sprite\" \"npm run watch:pug\" \"npm run watch:js\" \"npm run watch:styles\" \"npm run watch:fonts\" \"npm run watch:img\" \"vite\"",
+    "build": "npm run sprite && npm run pug && npm run js:build && npm run styles:build && npm run copy:fonts && npm run copy:img && vite build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/eslint-parser": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.2.1",
+    "cssnano": "^7.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-dollar-sign": "^1.0.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.97.1",
     "sharp": "^0.34.5",
+    "shx": "^0.4.0",
+    "svg-sprite": "^2.0.4",
     "svgo": "^4.0.0",
+    "terser": "^5.44.1",
     "vite": "^7.2.4",
-    "vite-plugin-image-optimizer": "^2.0.3"
-  },
-  "dependencies": {
+    "vite-plugin-babel": "^1.3.2",
+    "vite-plugin-image-optimizer": "^2.0.3",
+    "vite-plugin-pug": "^0.4.1",
     "vite-plugin-svg-spriter": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.pug": [
+      "pug --pretty"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": [
+    "last 4 versions",
+    "> 1%",
+    "ie 11"
+  ],
+  "dependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
   }
 }
