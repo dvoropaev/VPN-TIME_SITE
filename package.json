@@ -23,7 +23,7 @@
     "watch:img": "chokidar \"src/img/**/*\" -c \"npm run copy:img\" --initial",
     "sprite": "node vite/svg-sprite.js",
     "watch:sprite": "chokidar 'src/icons/**/*.svg' -c 'npm run sprite'",
-    "dev": "npm run sprite && concurrently \"npm run watch:sprite\" \"npm run watch:pug\" \"npm run watch:js\" \"npm run watch:styles\" \"npm run watch:fonts\" \"npm run watch:img\" \"vite\"",
+    "dev": "npm run sprite && concurrently \"npm run watch:sprite\" \"npm run watch:pug\" \"npm run watch:js\" \"npm run watch:styles\" \"npm run watch:fonts\" \"npm run watch:img\" \"vite --open\"",
     "build": "npm run sprite && npm run pug && npm run js:build && npm run styles:build && npm run copy:fonts && npm run copy:img && vite build",
     "deploy": "gh-pages -d dist"
   },
