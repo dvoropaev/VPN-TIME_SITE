@@ -2,4 +2,11 @@
   position: relative;
   height: 17.8rem;
   padding-top: 1.8rem;
+
+  &__image{
+    img{
+      width: 62.4rem;
+      height: 15.9rem;
+    }
+  }
 }

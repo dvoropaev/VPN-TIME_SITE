@@ -5,12 +5,20 @@
   padding: 0;
 }
 
+html {
+  font-size: 0.694vw;
+
+  //1440  10/(1440/100) = 10/14.4 = 0.6944444444444444
+}
+
 html,
 body {
   position: relative;
   width: 100%;
   min-width: 320px;
-  font-size: 10px;
+  // font-size: 10px;
+
+  
 }
 
 html {
@@ -44,6 +52,8 @@ p{
 }
 
 
+
+
 // @media (hover: hover){
 
 // }
@@ -57,11 +67,15 @@ p{
 
 // }
 
+@media (width <= 1440px){
 
-@import "component/header";
-@import "component/footer";
-@import "component/hero";
+}
 
-@import "component/button";
 
-@import "page/home";
+// @import "component/header";
+// @import "component/footer";
+// @import "component/hero";
+
+// @import "component/button";
+
+// @import "page/home";

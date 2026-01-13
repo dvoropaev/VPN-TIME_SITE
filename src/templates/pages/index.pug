@@ -1,17 +1,65 @@
 extends ../layouts/_layout.pug
 
+block vars
+  - var bodyClass = 'page-home'
+
 block title
-  title Все страницы - index.pug
+  title VPN-TIME
 
 
 block content
-
-
   main
+      <div class="container">
+        <div class="hero">
+            <div class="hero__image">
+              <img src="/img/hero/vpn-time.png" alt="vpn time" height="159">
+            </div>
+        </div>
+        <div class="home__info">
+          <div class="home__info-wrapper">
+            <div class="title">Кто такой этот ваш VPN-Time?</div>
+            <div class="home__info-content">
+              <p>VPN-Time&nbsp;&mdash; это сервис, который позволяет использовать защищённый интернет без абонентской платы.</p>
+              <p>Мы&nbsp;работаем по&nbsp;принципу pay‑as‑you‑go: покупаете нужное количество часов и&nbsp;тратите их&nbsp;когда удобно.</p>
+              <p class="text-700">Никаких ежемесячных платежей!</p>
+            </div>
+            <a href="#" class="btn btn-green" target="_blank">
+              <span class="icon icon-telegram"></span>
+              <span class="text">Попробовать бесплатно</span>
+            </a>
+          </div>
+        </div>
 
-    h2 Привет
-    ul
-      li: a(href="/") Главная
-      li: a(href="/about/") О нас
-      li: a(href="/contact/") Контакты
-      li: a(href="/example/") Пример
+        <div class="home__info-price">
+          <div class="info">
+            <div class="title">Почему это удобно?</div>
+            <div class="content">
+              <p>Вы&nbsp;платите только за&nbsp;то&nbsp;время, в&nbsp;течение которого пользовались;</p>
+              <p>Купленное время не&nbsp;сгорит через неделю, месяц или даже год;</p>
+              <p>Вы&nbsp;не&nbsp;доплачиваете за&nbsp;дополнительные ключи/устройства.</p>
+            </div>
+          </div>
+          <div class="price">
+            <div class="price__img">
+              <img src="/img/page/home/price.png" alt="">
+            </div>
+            <div class="title">Что по ценам?</div>
+            <div class="price__data">
+              <p>10 часов — 40 рублей;</p>
+              <p>40 часов — 100 рублей;</p>
+              <p>100 часов — 200 рублей;</p>
+              <p>300 часов — 500 рублей;</p>
+              <p>1000 часов — 1000 рублей.</p>
+            </div>
+            <p class="info-text">Цены могут отличаться, актуальные цены в</p>
+            <a href="#" class="btn btn-blue" target="_blank">
+              <span class="icon icon-telegram"></span>
+              <span class="text">telegram-боте</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home__footer-img">
+        <img src="/img/page/home/footer.png" alt="">
+      </div>
+
