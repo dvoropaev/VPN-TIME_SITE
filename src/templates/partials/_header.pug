@@ -1,24 +1,25 @@
 - 
+  var basePath = typeof basePath !== 'undefined' ? basePath : './'
   var mainMenu = [
     {
       "name": "Главная",
-      "link": "/"
+      "link": basePath === './' ? './' : '../'
     },
     {
       "name": "Faq",
-      "link": "/faq"
+      "link": basePath + "faq/"
     },
     {
       "name": "Правила",
-      "link": "/rules"
+      "link": basePath + "rules/"
     },
     {
       "name": "Инструкции",
-      "link": "/instructions"
+      "link": basePath + "instructions/"
     },
     {
       "name": "Мерч",
-      "link": "/merch"
+      "link": basePath + "merch/"
     }
   ];
 
