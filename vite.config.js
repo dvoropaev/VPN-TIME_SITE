@@ -5,6 +5,7 @@ import pugPlugin from "vite-plugin-pug";
 import babel from "vite-plugin-babel";
 
 export default defineConfig({
+  base: './',
   plugins: [
     pugPlugin(),
     babel({

@@ -1,8 +1,9 @@
 .footer{
   height: 8.8rem;
   padding-top: 3.2rem;
+  box-shadow: 0 -.6rem 1.4rem 0 rgba(0, 0, 0, 0.8);
   background: linear-gradient(90deg, #0651C6 0%, #032760 100%);
-  box-shadow: 0 -6px 14.3px 0 rgb(0 0 0 / 80%);
+  position: relative;
 
     .container{
       width: 45rem;

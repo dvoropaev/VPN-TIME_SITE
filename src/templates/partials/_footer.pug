@@ -1,2 +1,36 @@
-footer
-  p © 2025 My Site
+- 
+  var mainMenu = [
+    {
+      "name": "Главная",
+      "link": "/"
+    },
+    {
+      "name": "Faq",
+      "link": "/faq"
+    },
+    {
+      "name": "Правила",
+      "link": "/rules"
+    },
+    {
+      "name": "Инструкции",
+      "link": "/instructions"
+    },
+    {
+      "name": "Мерч",
+      "link": "/merch"
+    }
+  ];
+
+footer.footer
+  .container
+    <nav class="footer__nav">
+
+      each nav in mainMenu
+          a(
+              href=nav.link
+              class="footer__nav-item" +
+              (active_nav == nav.link ? ' active' : '')
+          )= nav.name
+
+    </nav>
