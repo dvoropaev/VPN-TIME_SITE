@@ -1,5 +1,5 @@
 .header {
-  padding-top: 3.2rem;
+  display: none;
 
   .container{
     width: 45rem;
@@ -54,6 +54,9 @@
 // }
 
 
-// @media (width >= 768px){
-
-// }
+@media (width >= 768px){
+  .header {
+    display: block;
+    padding-top: 3.2rem;
+  }
+}

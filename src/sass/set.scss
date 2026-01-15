@@ -6,9 +6,9 @@
 }
 
 html {
-  font-size: 0.694vw;
-
-  //1440  10/(1440/100) = 10/14.4 = 0.6944444444444444
+  font-size: 2.4vw;
+  //1440  10/(414/100) = 2.4
+  height: 100%;
 }
 
 html,
@@ -19,10 +19,6 @@ body {
   // font-size: 10px;
 
   
-}
-
-html {
-  height: 100%;
 }
 
 body {
@@ -37,8 +33,8 @@ p{
 }
 
 .container{
-  width: 60.5rem;
-  margin: 0 auto;
+  width: calc(100% - 3.4rem);
+  margin: 0 1.7rem;
 }
 
 .title{
@@ -63,19 +59,23 @@ p{
 // }
 
 
-// @media (width >= 768px){
+@media (width >= 768px){
 
-// }
+  html {
+    font-size: 0.694vw;
 
-@media (width <= 1440px){
+  //1440  10/(1440/100) = 10/14.4 = 0.6944444444444444
+  }
+
+  .container{
+    width: 60.5rem;
+    margin: 0 auto;
+  }
 
 }
 
+// @media (width <= 1440px){
 
-// @import "component/header";
-// @import "component/footer";
-// @import "component/hero";
+// }
 
-// @import "component/button";
 
-// @import "page/home";

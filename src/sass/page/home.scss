@@ -12,7 +12,7 @@
       }
   
       &-home{
-        background-image: url("../img/bg/bg-home.png");
+        background-image: url("../img/bg/bg-mobile.png");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100vw;
@@ -21,18 +21,19 @@
   
   .home{
     &__info{
-      width: 60.5rem;
-      margin-bottom: 1.8rem;
-      padding: 2rem 5rem;
-      border-radius: 3.5rem;
-  
-      text-align: center;
-  
-      background-color: rgb(255 255 255 / 90%);
-  
-      &-content{
-        padding-bottom: 1.8rem;
-      }
+
+      // &-content{
+      //   background-color: rgb(255 255 255 / 90%);
+      //   border-radius: 2.6rem;
+      //   padding: .8rem 1.3rem;
+      //   text-align: center;
+      //   margin-bottom: 1rem;
+
+      //   .btn{
+      //     margin-top: .8rem;
+      //   }
+      // }
+      
     }
   
     &__info-price{
@@ -65,4 +66,54 @@
   
     }
   }  
+
+@media (width <= 767px){
+  .page{
+
+    .home{
+      &__info{
+        &-content{
+          background-color: rgb(255 255 255 / 90%);
+          border-radius: 2.6rem;
+          padding: .8rem 1.3rem;
+          text-align: center;
+          margin-bottom: 1rem;
+
+          .btn{
+            margin-top: .8rem;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (width >= 768px){
+  .page{
+      &-home{
+        background-image: url("../img/bg/bg-home.png");
+      }
+
+
+      .home{
+        &__info{
+          width: 60.5rem;
+          margin-bottom: 1.8rem;
+          padding: 2rem 5rem;
+          border-radius: 3.5rem;
+          background-color: rgb(255 255 255 / 90%);
+          text-align: center;
+      
+          
+      
+          &-content{
+            padding-bottom: 1.8rem;
+          }
+        }
+      }
+
+
+  }
+}
 
