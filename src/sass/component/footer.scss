@@ -44,85 +44,82 @@
 }
 
 @media (width <= 767px) {
-  .footer {
-    padding-bottom: .8rem;
-    position: fixed;
-    bottom: 0;
-    background: linear-gradient(90deg, #0651c6 0%, #032760 100%);
-    z-index: 5;
-    width: 100%;
-    
-    &__nav {
-      &-item {
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        position: relative;
+    .footer {
+        padding-bottom: .8rem;
+        position: fixed;
+        bottom: 0;
+        background: linear-gradient(90deg, #0651c6 0%, #032760 100%);
+        z-index: 5;
+        width: 100%;
 
-        &::before{
-          content: '';
-          display: block;
-          position: absolute;
-          top: -2.2rem;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 2.7rem;
-          height: 2.6rem;
-          background-size: contain;
-          background-position: center bottom;
-          background-repeat: no-repeat;
+        &__nav {
+            &-item {
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                position: relative;
 
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -2.2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 2.7rem;
+                    height: 2.6rem;
+                    background-size: contain;
+                    background-position: center bottom;
+                    background-repeat: no-repeat;
+                }
+
+                &.icon-home {
+                    &::before {
+                        background-image: url(../img/ico/menu/home.svg);
+                    }
+                }
+
+                &.icon-faq {
+                    &::before {
+                        background-image: url(../img/ico/menu/faq.svg);
+                        width: 2rem;
+                        height: 2.2rem;
+                    }
+                }
+
+                &.icon-rules {
+                    &::before {
+                        background-image: url(../img/ico/menu/rules.svg);
+                        width: 1.6rem;
+                        height: 2.3rem;
+                    }
+                }
+
+                &.icon-instructions {
+                    &::before {
+                        background-image: url(../img/ico/menu/instructions.svg);
+                        width: 2rem;
+                        height: 2.3rem;
+                    }
+                }
+
+                &.icon-merch {
+                    &::before {
+                        background-image: url(../img/ico/menu/merch.svg);
+                        width: 2.5rem;
+                        height: 2.3rem;
+                    }
+                }
+            }
         }
-
-        &.icon-home{
-          &::before{
-            background-image: url(../../img/ico/menu/home.svg);
-          }
-        }
-
-        &.icon-faq{
-          &::before{
-            background-image: url(../../img/ico/menu/faq.svg);
-            width: 2rem;
-            height: 2.2rem;
-          }
-        }
-
-        &.icon-rules{
-          &::before{
-            background-image: url(../../img/ico/menu/rules.svg);
-            width: 1.6rem;
-            height: 2.3rem;
-          }
-        }
-
-        &.icon-instructions{
-          &::before{
-            background-image: url(../../img/ico/menu/instructions.svg);
-            width: 2rem;
-            height: 2.3rem;
-          }
-        }
-
-        &.icon-merch{
-          &::before{
-            background-image: url(../../img/ico/menu/merch.svg);
-            width: 2.5rem;
-            height: 2.3rem;
-          }
-        }
-
-      }
     }
-  }
 }
 
 @media (width >= 768px) {
+    .footer {
+        height: 8.8rem;
 
-  .footer {
-    height: 8.8rem;
-    .container {
-        width: 45rem;
+        .container {
+            width: 45rem;
+        }
     }
-  }
-
 }
