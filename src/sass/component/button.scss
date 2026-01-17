@@ -3,10 +3,10 @@
     position: relative;
 
     display: inline-flex;
-    gap: 1.3rem;
+    gap: .6rem;
     align-items: center;
 
-    padding: 1.4rem 2.2rem 1.2rem;
+    padding: 1rem 1.3rem;
     border-radius: 10rem;
 
     font-size: 1.6rem;
@@ -19,16 +19,21 @@
     letter-spacing: 0.8px;
 
     background-color: #00C234;
+
+    .text{
+      padding-top: .2rem;
+    }
   }
 
   &-blue{
     position: relative;
 
     display: inline-flex;
-    gap: 1.3rem;
+    gap: .8rem;
     align-items: center;
 
-    padding: 1.4rem 2.2rem 1.2rem;
+    padding: .5rem .8rem;
+
     border-radius: 10rem;
 
     font-size: 1.6rem;
@@ -37,7 +42,6 @@
     line-height: 1.7rem;
     color: #FFF;
     text-decoration: none;
-    // text-transform: uppercase;
     letter-spacing: 0.8px;
 
     background-color: #26D6FD;
@@ -46,8 +50,8 @@
   .icon{
     &-telegram{
       display: inline-flex;
-      width: 2.6rem;
-      height: 2.2rem;
+      width: 1.8rem;
+      height: 1.5rem;
       background-image: url("../img/ico/telegram.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -89,4 +93,30 @@
 
     }
   }
+}
+
+@media (width >= 768px){
+
+  .btn{
+
+    &-blue{
+      gap: 1.3rem;
+      padding: 1.4rem 2.2rem 1.2rem;
+    }
+
+    &-green{
+      gap: 1.3rem;
+      padding: 1.4rem 2.2rem 1.2rem;
+    }
+
+    .icon{
+      &-telegram{
+        width: 2.6rem;
+        height: 2.2rem;
+      }
+    }
+
+  }
+
+
 }

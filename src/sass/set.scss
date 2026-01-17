@@ -59,6 +59,14 @@ p{
 // }
 
 
+@media (width <= 767px){
+  .m-none{
+    display: none;
+  }
+}
+
+
+
 @media (width >= 768px){
 
   html {
