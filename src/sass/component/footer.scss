@@ -58,6 +58,10 @@
                 font-size: 1.1rem;
                 position: relative;
 
+                &.active{
+                    color: #25D5FC;
+                }
+
                 &::before {
                     content: '';
                     display: block;

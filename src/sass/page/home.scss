@@ -10,7 +10,7 @@
     }
 
     &-home {
-        background-image: url("../img/bg/bg-mobile.png");
+        background-image: url("../img/bg/bg-home-mobile-2x.png");
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 100vw;
@@ -98,6 +98,11 @@
                             width: 21rem;
                             margin: 0 auto;
                         }
+
+                        .btn{
+                            position: relative;
+                            z-index: 2;
+                        }
                     }
                 }
             }
@@ -113,7 +118,7 @@
                     width: 52rem;
                     height: auto;
                     object-fit: cover;
-                    object-position: -9.6rem;
+                    object-position: -10rem;
                 }
             }
         }
