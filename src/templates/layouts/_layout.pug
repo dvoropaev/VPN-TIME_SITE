@@ -1,0 +1,25 @@
+include ../mixins/all
+
+doctype html
+html
+  block vars
+    - var bodyClass = bodyClass || ''
+    - var basePath = basePath || './'
+
+  head
+    include _head
+
+  //- bodyClass задаётся в страницах; по умолчанию только базовый класс page
+  body()
+    div(class=['page', bodyClass || ''])
+      block header
+        include ../partials/_header
+
+      block content
+
+      block footer
+        include ../partials/_footer
+
+      block scripts
+        - var basePath = typeof basePath !== 'undefined' ? basePath : './'
+        script(type="module" src=basePath + "js/main.js")

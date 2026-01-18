@@ -1,0 +1,45 @@
+- 
+  var basePath = typeof basePath !== 'undefined' ? basePath : './'
+  var currentPage = typeof currentPage !== 'undefined' ? currentPage : ''
+  var mainMenu = [
+    {
+      "name": "Главная",
+      "link": basePath === './' ? './' : '../',
+      "icon": "home",
+      "page": "home"
+    },
+    {
+      "name": "Faq",
+      "link": basePath + "faq/",
+      "icon": "faq",
+      "page": "faq"
+    },
+    {
+      "name": "Правила",
+      "link": basePath + "rules/",
+      "icon": "rules",
+      "page": "rules"
+    },
+    {
+      "name": "Инструкции",
+      "link": basePath + "instructions/",
+      "icon": "instructions",
+      "page": "instructions"
+    },
+    {
+      "name": "Мерч",
+      "link": basePath + "merch/",
+      "icon": "merch",
+      "page": "merch"
+    }
+  ];
+
+footer.footer
+  .container
+    nav.footer__nav
+      each nav in mainMenu
+        a(
+            href=nav.link
+            class="footer__nav-item" + ' icon-' +nav.icon + 
+            (currentPage == nav.page ? ' active' : '')
+        )= nav.name

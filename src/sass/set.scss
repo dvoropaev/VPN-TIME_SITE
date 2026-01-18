@@ -1,0 +1,89 @@
+/* ==========  Global  ========== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 2.4vw;
+  //1440  10/(414/100) = 2.4
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  // font-size: 10px;
+
+  
+}
+
+body {
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.6rem;
+  // background: linear-gradient(180deg, #26D6FD 0%, #0035BA 100%);
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+
+.container{
+  width: calc(100% - 3.4rem);
+  margin: 0 1.7rem;
+}
+
+.title{
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.text-700{
+  font-weight: 700;
+}
+
+
+
+
+// @media (hover: hover){
+
+// }
+
+// @media (width <= 767px){
+
+// }
+
+
+@media (width <= 767px){
+  .m-none{
+    display: none;
+  }
+}
+
+
+
+@media (width >= 768px){
+
+  html {
+    font-size: 0.694vw;
+
+  //1440  10/(1440/100) = 10/14.4 = 0.6944444444444444
+  }
+
+  .container{
+    width: 60.5rem;
+    margin: 0 auto;
+  }
+
+}
+
+// @media (width <= 1440px){
+
+// }
+
+

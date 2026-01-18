@@ -1,0 +1,45 @@
+- 
+  var basePath = typeof basePath !== 'undefined' ? basePath : './'
+  var currentPage = typeof currentPage !== 'undefined' ? currentPage : ''
+  var mainMenu = [
+    {
+      "name": "Главная",
+      "link": basePath === './' ? './' : '../',
+      "page": "home"
+    },
+    {
+      "name": "Faq",
+      "link": basePath + "faq/",
+      "page": "faq"
+    },
+    {
+      "name": "Правила",
+      "link": basePath + "rules/",
+      "page": "rules"
+    },
+    {
+      "name": "Инструкции",
+      "link": basePath + "instructions/",
+      "page": "instructions"
+    },
+    {
+      "name": "Мерч",
+      "link": basePath + "merch/",
+      "page": "merch"
+    }
+  ];
+
+<header id="header" class="header">
+  <div class="container">
+    <nav class="header__nav">
+
+      each nav in mainMenu
+          a(
+              href=nav.link
+              class="header__nav-item" +
+              (currentPage == nav.page ? ' active' : '')
+          )= nav.name
+
+    </nav>
+  </div>
+</header>

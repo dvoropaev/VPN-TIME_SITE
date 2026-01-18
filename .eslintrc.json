@@ -1,0 +1,42 @@
+{
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "babelOptions": {
+        "presets": ["@babel/preset-env"]
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jquery": true,
+      "es2021": true
+    },
+    "plugins": [
+      "dollar-sign",
+      "import",  // для контроля порядка импортов
+      "prettier"  // чтобы связать ESLint и Prettier
+    ],
+    "extends": [
+      "airbnb-base",  // Стандарт от Airbnb
+      "prettier",  // Согласование с Prettier
+      "plugin:import/errors", // Правила для корректных импортов
+      "plugin:import/warnings",
+      "plugin:import/typescript" // если вдруг используешь TypeScript
+    ],
+    "rules": {
+      "dollar-sign/dollar-sign": [2, "ignoreProperties"],
+      "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+      "no-unused-vars": 1,
+      "import/prefer-default-export": 0,  // Отключаем правило, если не используешь дефолтный экспорт
+      "import/no-unresolved": 2,  // Контроль правильности путей
+      "prettier/prettier": [
+        "error", {
+          "singleQuote": true,  // Используем одинарные кавычки
+          "semi": true,         // Требуем точку с запятой
+          "trailingComma": "all" // Трейлинг запятая на всех многострочных конструкциях
+        }
+      ],
+      "no-console": ["warn", { "allow": ["warn", "error"] }] // Меньше жесткости по отношению к `console`
+    }
+  }

@@ -1,0 +1,29 @@
+.hero {
+    padding-top: 2rem;
+    padding-bottom: 3.4rem;
+
+    &__image {
+        background-image: url(../img/hero/vpn-time-mobile-2x.png);
+        width: 15.6rem;
+        height: 13.4rem;
+        background-size: contain;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (width >= 768px) {
+    .hero {
+        position: relative;
+        height: 17.8rem;
+        padding-top: 1.8rem;
+        padding-bottom: 0;
+
+        &__image {
+            background-image: url(../img/hero/vpn-time.png);
+            width: 100%;
+            height: 15.9rem;
+            background-size: cover;
+        }
+    }
+}
