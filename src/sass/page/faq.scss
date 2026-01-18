@@ -1,0 +1,63 @@
+.page {
+
+    &-faq{
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box__btn{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3.5rem;
+        }
+    }
+
+
+
+}
+
+.faq{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/faq-2x.png);
+            width: 9rem;
+            height: 5.7rem;
+            background-size: contain;
+            margin: 0 auto;
+
+            
+        }
+    }
+}
+
+
+@media (width <= 767px) {
+
+    .page {
+
+        &-faq{
+            background-image: url("../img/bg/bg-faq-mobile-2x.png");
+
+            main{
+                min-height: 100vh;
+                //padding-bottom: 9.5rem;
+            }
+        }
+
+    }
+
+}
+
+@media (width >= 768px) {
+        .page {
+        &-faq {
+            background-image: url("../img/bg/bg-faq.png");
+        }
+    }
+}

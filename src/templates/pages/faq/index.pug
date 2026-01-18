@@ -2,6 +2,7 @@ extends ../../layouts/_layout.pug
 
 block vars
   - var basePath = '../'
+  - var bodyClass = 'page-faq'
   - var currentPage = 'faq'
 
 block title
@@ -9,4 +10,38 @@ block title
 
 block content
   main
-    h2 Faq
+    .container
+      .faq-hero
+        .faq-hero__image
+
+      .accordion
+        .accordion__item
+          input(type='checkbox' class="accordion__checkbox" id="accordion__item-1" name="accordion" checked)
+          label(for="accordion__item-1")
+           .accordion__title
+              span.accordion__ico
+                span.thick-triangle
+              span Оплата и тарифы
+          .accordion__wrapper
+            .accordion__content 
+              .question Вопрос: Как работает оплата?
+              .answer Ответ: Пополняете баланс в боте, а списание происходит поминутно за время активного подключения. Если у вас несколько устройств, время списывается за каждое устройство.
+            .accordion__content 
+              .question Вопрос: Как оплатить?
+              .answer Ответ: Войдите в меню «Баланс», выберите желаемый к покупке пакет часов.
+            .accordion__content 
+              .question Вопрос: Как узнать, что время закончилось?
+              .answer Ответ: Бот предупредит о низком балансе.
+            .accordion__content 
+              .question Вопрос: Любой трафик считается активным или с определённого объёма?
+              .answer Ответ: Мы не смотрим на трафик, мы смотрим на время подключения и отключения.
+            .accordion__content 
+              .question Вопрос: Сколько длится пробный период?
+              .answer Ответ: Новым пользователям выдаётся несколько часов бесплатного доступа. Точное количество можно уточнить в боте.
+
+
+
+    .box__btn
+      a(href="https://t.me/vpn_time_pro_bot" class="btn btn-blue" target="_blank")
+        span.icon.icon-telegram
+        .text связаться с нами

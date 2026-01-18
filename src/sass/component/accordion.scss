@@ -1,0 +1,77 @@
+.thick-triangle {
+    width: 0;
+    height: 0;
+    border-left: 1.3rem solid transparent;
+    border-right: 1.3rem solid transparent;
+    border-top: 1.5rem solid #0A084C;
+    display: inline-block;
+
+    transform: rotate(-90deg);
+}
+
+.accordion {
+    &__item {}
+
+    label {
+        cursor: pointer;
+    }
+
+    &__ico {
+        padding-right: 1.5rem;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    &__wrapper {
+        padding-top: 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        display: block;
+    }
+
+    &__content {
+        border-radius: 3.5rem;
+        background-color: #fff;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        .question {
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+
+        .answer {}
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked ~ .accordion__wrapper {
+            max-height: 80rem;
+        }
+    }
+}
+
+@media (width <= 767px) {
+    .accordion {
+        padding-bottom: 3rem;
+
+        &__content {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (width >= 768px) {
+    .accordion {
+        &__checkbox {
+            &:checked ~ .accordion__wrapper {
+                max-height: 70rem;
+            }
+        }
+    }
+}
