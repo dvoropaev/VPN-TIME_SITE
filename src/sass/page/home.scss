@@ -141,7 +141,10 @@
                 text-align: center;
 
                 &-content {
-                    padding-bottom: 1.8rem;
+                    //padding-bottom: 1.8rem;
+                    .btn{
+                        margin-top: 1.8rem;
+                    }
                 }
 
                 &-price {
