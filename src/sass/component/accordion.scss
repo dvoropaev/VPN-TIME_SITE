@@ -6,23 +6,33 @@
     border-top: 1.5rem solid #0A084C;
     display: inline-block;
 
-    transform: rotate(-90deg);
+    
 }
 
 .accordion {
-    &__item {}
-
     label {
         cursor: pointer;
     }
 
     &__ico {
-        padding-right: 1.5rem;
+        //padding-right: 1.5rem;
+
+        position: relative;
+        width: 3rem;
+        flex-shrink: 0;
+
+        .thick-triangle{
+            transform: rotate(-90deg);
+            position: absolute;
+            top: .9rem;
+            transition: transform 0.3s ease-in-out;
+        }
     }
 
     &__title {
         font-size: 2.4rem;
         font-weight: bold;
+        display: flex;
     }
 
     &__wrapper {
@@ -53,8 +63,20 @@
         &:checked ~ .accordion__wrapper {
             max-height: 80rem;
         }
+
+        &:checked ~ .accordion__label{
+            .accordion__title{
+                .accordion__ico{
+                    .thick-triangle{
+                       transform: rotate(0); 
+                    }
+                }
+            }
+        }
     }
 }
+
+
 
 @media (width <= 767px) {
     .accordion {
@@ -72,6 +94,18 @@
             &:checked ~ .accordion__wrapper {
                 max-height: 70rem;
             }
+        }
+    }
+
+    #accordion__item-2{
+        &:checked ~ .accordion__wrapper {
+            max-height: 30rem;
+        }
+    }
+
+    #accordion__item-3{
+        &:checked ~ .accordion__wrapper {
+            max-height: 90rem;
         }
     }
 }
