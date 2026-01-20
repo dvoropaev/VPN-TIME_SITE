@@ -1,6 +1,11 @@
 .page {
     position: relative;
 
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100vw;
+    min-height: 100vh;
+
     &::after {
         content: "";
         position: fixed;
@@ -11,9 +16,6 @@
 
     &-home {
         background-image: url("../img/bg/bg-home-mobile-2x.png");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 100vw;
     }
 }
 
@@ -42,11 +44,6 @@
 
 @media (width <= 767px) {
     .page {
-        &-home {
-            main {
-                padding-bottom: 5.4rem;
-            }
-        }
 
         .home {
             &__info {
