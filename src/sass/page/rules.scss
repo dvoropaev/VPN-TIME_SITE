@@ -1,5 +1,5 @@
 .page {
-    &-faq{
+    &-rules{
 
         main{
             display: flex;
@@ -15,25 +15,32 @@
     }
 }
 
+.rules{
+    &__info{
+        border-radius: 3.5rem;
+        background-color: #fff;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
 
 @media (width <= 767px) {
-
     .page {
 
-        &-faq{
-            background-image: url("../img/bg/bg-faq-mobile-2x.png");
+        &-rules{
+            background-image: url("../img/bg/bg-rules-mobile-2x.png");
             main{
                 min-height: 100vh;
             }
         }
     }
-
 }
+
 
 @media (width >= 768px) {
     .page {
-        &-faq {
-            background-image: url("../img/bg/bg-faq.png");
+        &-rules {
+            background-image: url("../img/bg/bg-rules.png");
         }
     }
 }
