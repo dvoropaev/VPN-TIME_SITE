@@ -48,6 +48,16 @@ p {
     font-weight: 700;
 }
 
+ul{
+    list-style-position: inside;
+    padding-left: 2rem;
+}
+
+ul.empty-marker{
+    list-style: none;
+    padding-left: 2rem;
+}
+
 main {
     min-height: calc(100vh - 15rem);
 }

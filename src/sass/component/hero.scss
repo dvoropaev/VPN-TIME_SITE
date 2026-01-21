@@ -12,6 +12,41 @@
     }
 }
 
+.faq{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/faq-2x.png);
+            width: 9rem;
+            height: 5.7rem;
+            background-size: contain;
+            margin: 0 auto;
+
+            
+        }
+    }
+}
+
+.rules{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/rules-2x.png);
+            width: 27.1rem;
+            height: 21.2rem;
+            background-size: contain;
+            margin: 0 auto;
+            background-position-x: 2rem;
+
+            
+        }
+    }
+}
+
 @media (width >= 768px) {
     .hero {
         position: relative;
@@ -26,4 +61,5 @@
             background-size: cover;
         }
     }
+    
 }
