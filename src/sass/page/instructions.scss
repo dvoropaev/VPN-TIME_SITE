@@ -1,0 +1,48 @@
+.page {
+    &-instructions{
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box__btn{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3.5rem;
+        }
+
+    }
+}
+
+.instructions__btns{
+    text-align: center;
+
+    &-box{
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+@media (width <= 767px) {
+
+    .page {
+
+        &-instructions{
+            background-image: url("../img/bg/bg-instructions-mobile-2x.png");
+            main{
+                min-height: 100vh;
+            }
+        }
+    }
+
+}
+
+@media (width >= 768px) {
+    .page {
+        &-instructions {
+            background-image: url("../img/bg/bg-instructions.png");
+        }
+    }
+}
