@@ -79,6 +79,67 @@
     }
 }
 
+
+.instructions-windows{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/instructions-win-2x.png);
+            width: 22.2rem;
+            height: 17.1rem;
+            background-size: contain;
+            margin: 0 auto;
+        }
+    }
+}
+
+.instructions-iphone{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/instructions-mac-2x.png);
+            width: 22.2rem;
+            height: 17.1rem;
+            background-size: contain;
+            margin: 0 auto;
+        }
+    }
+}
+
+.instructions-android{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/instructions-mac-2x.png);
+            width: 22.2rem;
+            height: 17.1rem;
+            background-size: contain;
+            margin: 0 auto;
+        }
+    }
+}
+
+.instructions-other{
+    &-hero{
+        height: 23rem;
+        position: relative;
+        padding-top: 1rem;
+        &__image{
+            background-image: url(../img/hero/instructions-mac-2x.png);
+            width: 22.2rem;
+            height: 17.1rem;
+            background-size: contain;
+            margin: 0 auto;
+        }
+    }
+}
+
 @media (width >= 768px) {
     .hero {
         position: relative;

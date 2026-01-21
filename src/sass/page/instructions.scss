@@ -15,7 +15,12 @@
 
     }
 
-    &-instructions-mac{
+    &-instructions-mac,
+    &-instructions-windows,
+    &-instructions-iphone,
+    &-instructions-android,
+    &-instructions-other
+    {
         main{
             display: flex;
             flex-direction: column;
@@ -53,6 +58,7 @@
 }
 
 
+
 @media (width <= 767px) {
 
     .page {
@@ -64,6 +70,25 @@
             }
         }
 
+        &-instructions-mac {
+            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+        }
+
+        &-instructions-windows {
+            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+        }
+
+        &-instructions-iphone {
+            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+        }
+
+        &-instructions-android {
+            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+        }
+
+        &-instructions-other {
+            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+        }
     }
 
 }
@@ -76,6 +101,33 @@
 
         &-instructions-mac {
             background-image: url("../img/bg/bg-instructions-mac.png");
+        }
+
+        &-instructions-windows {
+            background-image: url("../img/bg/bg-instructions-mac.png");
+        }
+
+        &-instructions-iphone {
+            background-image: url("../img/bg/bg-instructions-mac.png");
+        }
+        
+        &-instructions-android {
+            background-image: url("../img/bg/bg-instructions-mac.png");
+        }
+        
+        &-instructions-other {
+            background-image: url("../img/bg/bg-instructions-mac.png");
+        } 
+    }
+
+    .win{
+        &-1{
+           width: 10.9rem;
+           height: 10.5rem; 
+        }
+        &-2{
+           width: 38.1rem;
+           height: 30.4rem; 
         }
     }
 }

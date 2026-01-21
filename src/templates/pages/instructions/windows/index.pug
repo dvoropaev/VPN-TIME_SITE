@@ -1,0 +1,40 @@
+extends ../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '../../'
+  - var bodyClass = 'page-instructions-windows'
+  - var currentPage = 'instructions-windows'
+
+block title
+  title Настройка на macOS
+
+block content
+  main
+    .container
+      .instructions-windows-hero
+        .instructions-windows-hero__image
+    
+      .instructions-mac__info
+        .title Настройка на Windows
+        .instructions-mac__info-content
+            p Скачайте и установите приложение <a href="https://openvpn.net/client/" target="_blank">OpenVPN Connect</a>.
+            p После успешной установки у вас должен появиться ярлык на рабочем столе:
+            .img__box.win-1
+              img(src="../../img/page/windows/openVPN.jpg", alt="")
+              
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Зайдите в телеграм бот и сохраните сгенерированный ключ в любом месте
+            p Запустите OpenVPN Connect. Нажмите UPLOAD FILE.
+            p В появившуюся область перетащите скачанный ранее файл с ключом
+
+            .img__box.win-2
+              img(src="../../img/page/windows/win2.jpg", alt="")         
+
+
+
+    .box__btn
+      a(href="https://t.me/vpn_time_pro_bot" class="btn btn-blue" target="_blank")
+        span.icon.icon-telegram
+        .text связаться с нами
+      
