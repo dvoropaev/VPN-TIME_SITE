@@ -1,0 +1,37 @@
+extends ../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '../../'
+  - var bodyClass = 'page-instructions-mac'
+  - var currentPage = 'instructions-mac'
+
+block title
+  title Настройка на macOS
+
+block content
+  main
+    .container
+      .instructions-mac-hero
+        .instructions-mac-hero__image
+    
+      .instructions-mac__info
+        .title Настройка на macOS
+        .instructions-mac__info-content
+            p Инструкция для настройки VPN на Macbook еще не готова :( 
+            p Приносим свои извинения...
+
+            ul 
+                li Но вы можете попробовать следующее:
+                li Скачайте и установите приложение OpenVPN Connect .
+                li Сгенерируйте и скачайте файл с ключом в нашем боте
+                li Откройте полученный файл в приложении OpenVPN Connect
+                li Используйте ползунгок для включения/выключения VPN
+                li Если не получилось - напишите нам!
+
+
+
+    .box__btn
+      a(href="https://t.me/vpn_time_pro_bot" class="btn btn-blue" target="_blank")
+        span.icon.icon-telegram
+        .text связаться с нами
+      
