@@ -79,7 +79,6 @@
     }
 }
 
-
 .instructions-windows{
     &-hero{
         height: 23rem;
@@ -101,9 +100,9 @@
         position: relative;
         padding-top: 1rem;
         &__image{
-            background-image: url(../img/hero/instructions-mac-2x.png);
-            width: 22.2rem;
-            height: 17.1rem;
+            background-image: url(../img/hero/instructions-iphone-2x.png);
+            width: 16.1rem;
+            height: 15.3rem;
             background-size: contain;
             margin: 0 auto;
         }
@@ -112,13 +111,14 @@
 
 .instructions-android{
     &-hero{
-        height: 23rem;
+        //height: 23rem;
+        padding-top: 4.5rem;
+        padding-bottom: 1rem;
         position: relative;
-        padding-top: 1rem;
         &__image{
-            background-image: url(../img/hero/instructions-mac-2x.png);
-            width: 22.2rem;
-            height: 17.1rem;
+            background-image: url(../img/hero/instructions-android-2x.png);
+            width: 15.4rem;
+            height: 15rem;
             background-size: contain;
             margin: 0 auto;
         }
@@ -131,7 +131,7 @@
         position: relative;
         padding-top: 1rem;
         &__image{
-            background-image: url(../img/hero/instructions-mac-2x.png);
+            background-image: url(../img/hero/instructions-other-2x.png);
             width: 22.2rem;
             height: 17.1rem;
             background-size: contain;

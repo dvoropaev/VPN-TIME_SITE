@@ -2,32 +2,79 @@ extends ../../../layouts/_layout.pug
 
 block vars
   - var basePath = '../../'
-  - var bodyClass = 'page-instructions-mac'
-  - var currentPage = 'instructions-mac'
+  - var bodyClass = 'page-instructions-iphone'
+  - var currentPage = 'instructions-iphone'
 
 block title
-  title Настройка на macOS
+  title Настройка на iPhone
 
 block content
   main
     .container
-      .instructions-mac-hero
-        .instructions-mac-hero__image
+      .instructions-iphone-hero
+        .instructions-iphone-hero__image
     
       .instructions-mac__info
-        .title Настройка на macOS
+        .title Настройка на iPhone
         .instructions-mac__info-content
-            p Инструкция для настройки VPN на Macbook еще не готова :( 
-            p Приносим свои извинения...
+            p Установите 
+              a(href="") OpenVPN Connect.
+            p При первом запуске у вас спросят разрешение на показ уведомления (тут лучше согласиться: рекламы не будет, честно-честно).
+            p Также попросят согласиться с условиями использования (увы, тут выбора нет).
+            .img__box.iphone-1
+              img(src="../../img/page/iphone/iphone-1.jpg", alt="")
 
-            ul 
-                li Но вы можете попробовать следующее:
-                li Скачайте и установите приложение OpenVPN Connect .
-                li Сгенерируйте и скачайте файл с ключом в нашем боте
-                li Откройте полученный файл в приложении OpenVPN Connect
-                li Используйте ползунгок для включения/выключения VPN
-                li Если не получилось - напишите нам!
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Зайдите в телеграм бота, найдите сообщение с файлом ключа и нажмите на файл чтобы открыть
+            .img__box.iphone-2
+              img(src="../../img/page/iphone/iphone-2.jpg", alt="")
 
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p В правом нижнем углу нажмите кнопку импорта файла
+            .img__box.iphone-3
+              img(src="../../img/page/iphone/iphone-3.jpg", alt="")
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Вам будет предложено выбрать программу для открытия файла.
+            p Найдите и выберите OpenVPN.
+            .img__box.iphone-4
+              img(src="../../img/page/iphone/iphone-4.jpg", alt="")
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p В появившемся окне нажмите Add.
+            p Затем нажмите CONNECT.
+            p Подтвердите все разрешения
+
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Чтобы включать/выключать VPN, двигайте этот ползунок.
+            p Если всплывет окно, нажмите Don't show again, а затем CONFIRM.
+            .img__box.iphone-5
+              img(src="../../img/page/iphone/iphone-5.jpg", alt="")
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Можно настроить автоматическое отключение/включение VPN при отключении/включении экрана.
+            p Это позволит экономить не только заряд, но и ваш баланс и нашу пропускную способность.
+            p 
+              span.text-700 ПРЕДУПРЕЖДЕНИЕ: 
+              | С этой настройкой при частом включении/выключении экрана может происходить задержка при переподключении к VPN от нескольких секунд до 1 минуты.
+            .img__box.iphone-6
+              img(src="../../img/page/iphone/iphone-6.jpg", alt="")
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Перейдите во вкладку 
+              span.text-700 Settings
+            p Поставьте галочку напротив пункта 
+              span.text-700 Battery Saver
+            .img__box.iphone-7
+              img(src="../../img/page/iphone/iphone-7.jpg", alt="")              
 
 
     .box__btn

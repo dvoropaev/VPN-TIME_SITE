@@ -161,4 +161,107 @@
             height: 16.4rem;
         }
     }
+
+    .iphone{
+        &-1 {
+            width: 27.7rem;
+            height: 33.1rem;
+        }
+        &-2 {
+            width: 27.5rem;
+            height: 35.5rem;
+        }
+
+        &-3 {
+            width: 27.4rem;
+            height: 41.1rem;
+        }
+
+        &-4 {
+            width: 27.3rem;
+            height: 38.7rem;
+        }
+
+        &-5 {
+            width: 27.4rem;
+            height: 41.1rem;
+        }
+        
+        &-6 {
+            width: 27.8rem;
+            height: 41.8rem;
+        }
+        
+        &-7 {
+            width: 27.7rem;
+            height: 41.5rem;
+        }
+        
+        
+    }
+
+    .android{
+        &-1 {
+            width: 26.6rem;
+            height: 39.9rem;
+        }
+        &-2 {
+            width: 26.8rem;
+            height: 40.2rem;
+        }
+
+        &-3 {
+            width: 26.7rem;
+            height: 40.1rem;
+        }
+
+        &-4 {
+            width: 26.8rem;
+            height: 40.1rem;
+        }
+
+        &-5 {
+            width: 26.8rem;
+            height: 40.2rem;
+        }
+        
+        &-6 {
+            width: 27.3rem;
+            height: 41rem;
+        }
+        
+        &-7 {
+            width: 27.5rem;
+            height: 25.7rem;
+        }
+        &-8 {
+            width: 27.3rem;
+            height: 36.2rem;
+        }
+        &-9 {
+            width: 27.2rem;
+            height: 40.9rem;
+        }
+
+        &-10 {
+            width: 27.2rem;
+            height: 40.8rem;
+        }
+
+        &-11 {
+            width: 27.2rem;
+            height: 40.8rem;
+        }
+
+        &-12 {
+            width: 27.7rem;
+            height: 41.6rem;
+        }
+        
+        &-13 {
+            width: 27.7rem;
+            height: 37.8rem;
+        }
+        
+    }
 }
