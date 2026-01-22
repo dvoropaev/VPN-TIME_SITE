@@ -1,0 +1,74 @@
+.page{
+    &-merch{
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box__btn{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3.5rem;
+        }
+
+        .home__info-content{
+            p{
+                text-align: left;
+            }
+            
+        }
+    }
+}
+
+    .merch{
+        &__img{
+            &-1,
+            &-2{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        
+    }
+
+@media (width <= 767px) {
+    .page {
+
+        &-merch{
+            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+            main{
+                min-height: 100vh;
+            }
+        }
+    }
+
+    .merch__img{
+        &-1,
+        &-2{
+            width: 16rem;
+            height: 18.4rem;
+        }
+    }
+
+}
+
+
+@media (width >= 768px) {
+    .page {
+        &-merch {
+            background-image: url("../img/bg/bg-merch.png");
+        }
+    }
+
+    .merch__img{
+        &-1,
+        &-2{
+            width: 23rem;
+            height: 26.4rem;
+        }
+    }
+}
