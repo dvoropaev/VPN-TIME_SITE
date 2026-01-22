@@ -1,71 +1,63 @@
 .page {
-    &-instructions{
-
-        main{
+    &-instructions {
+        main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        .box__btn{
+        .box__btn {
             display: flex;
             justify-content: center;
             padding-bottom: 3.5rem;
         }
-
     }
 
     &-instructions-mac,
     &-instructions-windows,
     &-instructions-iphone,
     &-instructions-android,
-    &-instructions-other
-    {
-        main{
+    &-instructions-other {
+        main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        .box__btn{
+        .box__btn {
             display: flex;
             justify-content: center;
             padding-bottom: 3.5rem;
         }
-        
     }
 }
 
-.instructions__btns{
+.instructions__btns {
     text-align: center;
 
-    &-box{
+    &-box {
         padding-bottom: 1.5rem;
     }
 }
 
-.instructions-mac{
-    &__info{
+.instructions-mac {
+    &__info {
         margin-bottom: 1.8rem;
         padding: 2rem 5rem;
         border-radius: 3.5rem;
         background-color: rgba(255, 255, 255, 0.9);
 
-        .title{
+        .title {
             text-align: center;
         }
     }
 }
 
-
-
 @media (width <= 767px) {
-
     .page {
-
-        &-instructions{
+        &-instructions {
             background-image: url("../img/bg/bg-instructions-mobile-2x.png");
-            main{
+            main {
                 min-height: 100vh;
             }
         }
@@ -91,6 +83,27 @@
         }
     }
 
+    .win {
+        &-1 {
+            width: 8.7rem;
+            height: 8.3rem;
+        }
+        &-2 {
+            max-width: 100%;
+            width: 32.8rem;
+            height: 26.2rem;
+        }
+
+        &-3 {
+            width: 25rem;
+            height: 24.4rem;
+        }
+
+        &-4 {
+            width: 28.9rem;
+            height: 14.4rem;
+        }
+    }
 }
 
 @media (width >= 768px) {
@@ -110,24 +123,42 @@
         &-instructions-iphone {
             background-image: url("../img/bg/bg-instructions-mac.png");
         }
-        
+
         &-instructions-android {
             background-image: url("../img/bg/bg-instructions-mac.png");
         }
-        
+
         &-instructions-other {
             background-image: url("../img/bg/bg-instructions-mac.png");
-        } 
+        }
     }
 
-    .win{
-        &-1{
-           width: 10.9rem;
-           height: 10.5rem; 
+    .win {
+        &-1 {
+            max-width: 109px;
+            max-height: 105px;
+            width: 10.9rem;
+            height: 10.5rem;
         }
-        &-2{
-           width: 38.1rem;
-           height: 30.4rem; 
+        &-2 {
+            max-width: 381px;
+            max-height: 304px;
+            width: 38.1rem;
+            height: 30.4rem;
+        }
+
+        &-3 {
+            max-width: 285px;
+            max-height: 278px;
+            width: 28.5rem;
+            height: 27.8rem;
+        }
+
+        &-4 {
+            max-width: 330px;
+            max-height: 164px;
+            width: 33rem;
+            height: 16.4rem;
         }
     }
 }
