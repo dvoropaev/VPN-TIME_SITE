@@ -1,3 +1,21 @@
-console.log('vpn time');
+var goTopBtn = document.querySelector(".go-top");
+if (goTopBtn) {
+  var trackScroll = function trackScroll() {
+    var scrolled = window.pageYOffset;
+    if (scrolled > 200) {
+      goTopBtn.classList.add("go-top--show");
+    } else {
+      goTopBtn.classList.remove("go-top--show");
+    }
+  };
+  var goTop = function goTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  goTopBtn.addEventListener("click", goTop);
+  window.addEventListener("scroll", trackScroll);
+}
 
 //# sourceMappingURL=main.js.map
