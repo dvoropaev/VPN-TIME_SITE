@@ -47,6 +47,32 @@
     background-color: #26D6FD;
   }
 
+  &-white{
+    position: relative;
+
+    display: inline-flex;
+    gap: .8rem;
+    justify-content: center;
+    align-items: center;
+
+    padding: .5rem .8rem;
+
+    border-radius: 10rem;
+
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.7rem;
+    color: #0A084C;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+
+    background-color: #fff;
+
+    min-width: 20.2rem;
+    height: 4.7rem;
+  }
+
   .icon{
     &-telegram{
       display: inline-flex;
@@ -91,6 +117,17 @@
         background-color: #034A6D;
       }
 
+    }
+
+    &-white{
+      transition: background-color 0.4s ease-in-out;
+      &:hover{
+        background-color: #C8C8C8;
+      }
+
+      &:active {
+        background-color: #034A6D;
+      }
     }
   }
 }

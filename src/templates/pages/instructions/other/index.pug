@@ -1,0 +1,84 @@
+extends ../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '../../'
+  - var bodyClass = 'page-instructions-other'
+  - var currentPage = 'instructions-other'
+
+block title
+  title Настройка на других устройствах 
+
+block content
+  main
+    .container
+      .instructions-other-hero
+        .instructions-other-hero__image
+    
+      .instructions-mac__info
+        .title 
+          div Настройка 
+          div на других устройствах 
+        .instructions-mac__info-content
+            p 
+              span.text-700 Важно! 
+              |Мы не гарантируем стабильную работу сервиса на перечисленных ниже платформах. При возникновении трудностей обращайтесь в техподдержку.
+
+      .instructions-mac__info
+        .title__left Android TV
+        .instructions-mac__info-content
+            p Наш сервис поддерживает только телевизоры на операционной системе Android.
+            p Для подключения используйте приложение 
+              a(href="#" target="_blank") OpenVPN for Android.
+
+      .instructions-mac__info
+        .title__left Android Auto
+        .instructions-mac__info-content
+            p Настройка выполняется аналогично смартфонам на Android.
+
+      .instructions-mac__info
+        .title__left Linux
+        .instructions-mac__info-content
+            p 1. Установка
+            p.text-700 Debian / Ubuntu
+            .instructions__info-box 
+              p sudo apt update
+              p sudo apt install -y openvpn
+
+            p.text-700 CentOS / RHEL 7
+            .instructions__info-box 
+              p sudo yum install -y epel-release
+              p sudo yum install -y openvpn
+
+            p.text-700 CentOS / RHEL 8+ / Fedora
+            .instructions__info-box 
+              p sudo dnf install -y openvpn  
+
+            p.text-700 Arch Linux
+            .instructions__info-box 
+              p sudo pacman -Sy --noconfirm openvpn   
+
+            p.text-700 openSUSE
+            .instructions__info-box 
+              p sudo zypper refresh
+              p sudo zypper install -y openvpn
+            
+            p 2. Подключение с использованием  .ovpn файла
+            p
+              ol.instructions__ul 
+                li Скопируйте файл client.ovpn в каталог ~/openvpn/.
+                li Запустите OpenVPN
+                  .instructions__info-box 
+                    p sudo openvpn --config ~/openvpn/client.ovpn
+                li Чтобы запустить OpenVPN в фоне
+                  .instructions__info-box 
+                    p sudo nohup openvpn --config ~/openvpn/client.ovpn > ~/openvpn/openvpn.log 2>&1 &
+                li Для остановки используйте
+                  .instructions__info-box 
+                    p pkill openvpn
+
+
+    .box__btn
+      a(href="https://t.me/vpn_time_pro_bot" class="btn btn-blue" target="_blank")
+        span.icon.icon-telegram
+        .text связаться с нами
+      

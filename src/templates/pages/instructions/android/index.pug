@@ -1,0 +1,134 @@
+extends ../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '../../'
+  - var bodyClass = 'page-instructions-android'
+  - var currentPage = 'instructions-android'
+
+block title
+  title Настройка на Android
+
+block content
+  main
+    .container
+      .instructions-android-hero
+        .instructions-android-hero__image
+    
+      .instructions-mac__info
+        .title Настройка на Android
+        .instructions-mac__info-content
+            p Зайдите в телеграм бота, найдите сообщение с файлом ключа и нажмите на три точки, чтобы открыть меню
+            .img__box.android-1
+              img(src="../../img/page/android/android-1.jpg", alt="")
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p В открывшемся меню нажмите
+            p.text-700 Сохранить в загрузки
+            .img__box.android-2
+              img(src="../../img/page/android/android-2.jpg", alt="")
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Установите и запустите 
+              a(href="#" target="_blank") OpenVPN Connect.
+            p При первом запуске у вас спросят разрешение на показ уведомления (тут лучше согласиться: рекламы не будет, честно-честно).
+            p Также попросят согласиться с условиями использования (увы, тут выбора нет).
+            .img__box.android-3
+              img(src="../../img/page/android/android-3.jpg", alt="")              
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Как попадёте в главное окно, нажмите 
+              span.text-700 Upload File, 
+              | а затем 
+              span.text-700 BROWSE.
+              a(href="#" target="_blank") OpenVPN Connect.
+
+            .img__box.android-4
+              img(src="../../img/page/android/android-4.jpg", alt="")  
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p В следующем окне нажмите кнопку меню (квадратик с тремя полосками в верхнем левом углу)
+            .img__box.android-5
+              img(src="../../img/page/android/android-5.jpg", alt="")    
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Выберите пункт с загрузками
+            .img__box.android-6
+              img(src="../../img/page/android/android-6.jpg", alt="")         
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Нажмите на папку 
+              span.text-700 Telegram
+            .img__box.android-7
+              img(src="../../img/page/android/android-7.jpg", alt="")                           
+
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p В открывшейся папке найдите скачанный файл с ключом
+            .img__box.android-8
+              img(src="../../img/page/android/android-8.jpg", alt="")   
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Для удобства напишите свой 
+              span.text-700 Profile Name 
+              | или оставьте как есть.
+            p Затем нажмите 
+              span.text-700 CONNECT.
+            p Во всплывающем окне поставьте галочку 
+              span.text-700 Больше не спрашивать
+              |, а затем 
+              span.text-700 Разрешить.
+            .img__box.android-9
+              img(src="../../img/page/android/android-9.jpg", alt="")  
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Чтобы включать/выключать VPN, двигайте этот ползунок.
+            p Если всплывет окно, нажмите 
+              span.text-700 Don't show again
+              |, а затем 
+              span.text-700 CONFIRM.
+            .img__box.android-10
+              img(src="../../img/page/android/android-10.jpg", alt="")                
+
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p 
+              span.text-700 Настройка энергосбережения
+            p Это позволит экономить не только заряд, но и ваш баланс и нашу пропускную способность.
+            p 
+              span.text-700 ПРЕДУПРЕЖДЕНИЕ: 
+              | С этой настройкой при частом включении/выключении экрана может происходить задержка при переподключении к VPN от нескольких секунд до 1 минуты.
+            p Нажмите кнопку меню
+
+            .img__box.android-11
+              img(src="../../img/page/android/android-11.jpg", alt="")   
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Перейдите во вкладку 
+              span.text-700 Settings
+            .img__box.android-12
+              img(src="../../img/page/android/android-12.jpg", alt="")                 
+
+
+      .instructions-mac__info
+        .instructions-mac__info-content
+            p Поставьте галочку напротив пункта 
+              span.text-700 Battery Saver
+            .img__box.android-13
+              img(src="../../img/page/android/android-13.jpg", alt="")            
+
+    .box__btn
+      a(href="https://t.me/vpn_time_pro_bot" class="btn btn-blue" target="_blank")
+        span.icon.icon-telegram
+        .text связаться с нами
+      
