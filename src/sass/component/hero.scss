@@ -127,13 +127,13 @@
 
 .instructions-other{
     &-hero{
-        height: 23rem;
         position: relative;
-        padding-top: 1rem;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
         &__image{
             background-image: url(../img/hero/instructions-other-2x.png);
-            width: 22.2rem;
-            height: 17.1rem;
+            width: 21.4rem;
+            height: 17rem;
             background-size: contain;
             margin: 0 auto;
         }
@@ -164,3 +164,30 @@
     }
     
 }
+
+@media (width <= 767px) {
+    .instructions{
+        &-mac{
+            &-hero{
+                padding-left: 6rem;
+            }
+        }  
+
+        &-android{
+            &-hero{
+                padding-top: 1rem;
+                padding-bottom: 6rem; 
+            }
+        }
+
+        &-other{
+            &-hero{
+                padding-top: 0rem;
+                padding-bottom: 4rem;
+            }
+
+        }
+    }
+}
+
+

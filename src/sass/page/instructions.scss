@@ -40,6 +40,8 @@
     }
 }
 
+
+
 .instructions-mac {
     &__info {
         margin-bottom: 1.8rem;
@@ -49,9 +51,31 @@
 
         .title {
             text-align: center;
+
+            &__left{
+                padding-bottom: 1rem;
+                font-size: 2.4rem;
+                font-weight: 700;
+                text-align: left;
+            }
         }
     }
 }
+
+.instructions{
+    &__info-box{
+        background-color: #E0E0E0;
+        border-radius: 2rem;
+        padding: .5rem 3.5rem;
+    }
+
+    &__ul{
+        list-style-position: inside;
+        padding-left: 2rem;
+    }
+}
+
+
 
 @media (width <= 767px) {
     .page {
@@ -117,19 +141,19 @@
         }
 
         &-instructions-windows {
-            background-image: url("../img/bg/bg-instructions-mac.png");
+            background-image: url("../img/bg/bg-instructions-win.png");
         }
 
         &-instructions-iphone {
-            background-image: url("../img/bg/bg-instructions-mac.png");
+            background-image: url("../img/bg/bg-instructions-iphone.png");
         }
 
         &-instructions-android {
-            background-image: url("../img/bg/bg-instructions-mac.png");
+            background-image: url("../img/bg/bg-instructions-android.png");
         }
 
         &-instructions-other {
-            background-image: url("../img/bg/bg-instructions-mac.png");
+            background-image: url("../img/bg/bg-instructions-other.png");
         }
     }
 
