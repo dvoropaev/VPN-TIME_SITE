@@ -1,1 +1,1 @@
-{"version":3,"file":"main.js","names":["console","log"],"sources":["../../src/js/main.js"],"sourcesContent":["console.log('Привет!')"],"mappings":"AAAAA,OAAO,CAACC,GAAG,CAAC,SAAS,CAAC","ignoreList":[]}
+{"version":3,"file":"main.js","names":["console","log"],"sources":["../../src/js/main.js"],"sourcesContent":["console.log('vpn time');"],"mappings":"AAAAA,OAAO,CAACC,GAAG,CAAC,UAAU,CAAC","ignoreList":[]}

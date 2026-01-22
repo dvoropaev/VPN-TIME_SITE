@@ -1,3 +1,3 @@
-console.log('Привет!');
+console.log('vpn time');
 
 //# sourceMappingURL=main.js.map

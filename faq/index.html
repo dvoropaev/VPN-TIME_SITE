@@ -13,13 +13,101 @@
     <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <div class="page"><header id="header" class="header">
+    <div class="page page-faq"><header id="header" class="header">
 <div class="container">
 <nav class="header__nav"><a class="header__nav-item" href="../">Главная</a><a class="header__nav-item active" href="../faq/">Faq</a><a class="header__nav-item" href="../rules/">Правила</a><a class="header__nav-item" href="../instructions/">Инструкции</a><a class="header__nav-item" href="../merch/">Мерч</a></nav>
 </div>
 </header>
       <main>
-        <h2>Faq</h2>
+        <div class="container">
+          <div class="faq-hero">
+            <div class="faq-hero__image"></div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__item el-1">
+              <input class="accordion__checkbox" type="checkbox" id="accordion__item-1" name="accordion">
+              <label class="accordion__label" for="accordion__item-1">
+                <div class="accordion__title"><span class="accordion__ico"><span class="thick-triangle"></span></span><span>Оплата и тарифы</span></div>
+              </label>
+              <div class="accordion__wrapper">
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Как работает оплата?</div>
+                  <div class="answer">Ответ: Пополняете баланс в боте, а списание происходит поминутно за время активного подключения. Если у вас несколько устройств, время списывается за каждое устройство.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Как оплатить?</div>
+                  <div class="answer">Ответ: Войдите в меню «Баланс», выберите желаемый к покупке пакет часов.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Как узнать, что время закончилось?</div>
+                  <div class="answer">Ответ: Бот предупредит о низком балансе.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Любой трафик считается активным или с определённого объёма?</div>
+                  <div class="answer">Ответ: Мы не смотрим на трафик, мы смотрим на время подключения и отключения.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Сколько длится пробный период?</div>
+                  <div class="answer">Ответ: Новым пользователям выдаётся несколько часов бесплатного доступа. Точное количество можно уточнить в боте.</div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item el-2">
+              <input class="accordion__checkbox" type="checkbox" id="accordion__item-2" name="accordion">
+              <label class="accordion__label" for="accordion__item-2">
+                <div class="accordion__title"><span class="accordion__ico"><span class="thick-triangle"></span></span><span>Устройства</span></div>
+              </label>
+              <div class="accordion__wrapper">
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Для другого устройства нужен отдельный ключ?**</div>
+                  <div class="answer">Ответ: Да. Один ключ будет работать только с одним устройством.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Как подключить несколько устройств?</div>
+                  <div class="answer">Ответ: Просто запросите для каждого устройства дополнительные ключи, за них доплачивать не нужно. По умолчанию стоит ограничение в 10 ключей на пользователя. Если вам нужно больше - свяжитесь с нами через бота.</div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item el-3">
+              <input class="accordion__checkbox" type="checkbox" id="accordion__item-3" name="accordion">
+              <label class="accordion__label" for="accordion__item-3">
+                <div class="accordion__title"><span class="accordion__ico"><span class="thick-triangle"></span></span><span>Подключение и технические нюансы</span></div>
+              </label>
+              <div class="accordion__wrapper">
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Почему не могу подключиться?</div>
+                  <div class="answer">Ответ: Убедитесь, что баланс положительный и вы используете актуальный конфигурационный файл (ключ).</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Ошибка аутентификации, что делать?</div>
+                  <div class="answer">Ответ: Убедитесь, что баланс положительный и вы используете актуальный конфигурационный файл (ключ).</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Почему не работает YouTube?</div>
+                  <div class="answer">Ответ: Проверьте, не установлен ли у вас you-boost или любой другой "ускоритель" ютуба. Они могут мешать.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Есть ли возможность управлять, какой трафик идет через VPN, а какой нет?**</div>
+                  <div class="answer">Ответ: К сожалению такой возможности нет.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Можно ли подключить VPN на роутер?</div>
+                  <div class="answer">Ответ: Если модель поддерживает режим OpenVPN‑клиента, импортируйте в него полученный .ovpn файл. Но мы не оказываем помощь в настройке роутеров.</div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Планируется поддержка других протоколов?</div>
+                  <div class="answer">Ответ: Сейчас сервис работает только по OpenVPN. Возможность подключения по другим протоколам рассматривается, но конкретных сроков нет. </div>
+                </div>
+                <div class="accordion__content"> 
+                  <div class="question">Вопрос: Приложение не запускается на Windows 7. Что делать?</div>
+                  <div class="answer">Ответ: Мы не поддерживаем windows 7                                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box__btn"><a class="btn btn-blue" href="https://t.me/vpn_time_pro_bot" target="_blank"><span class="icon icon-telegram"></span>
+            <div class="text">связаться с нами</div></a></div>
       </main>
       <footer class="footer">
         <div class="container">
