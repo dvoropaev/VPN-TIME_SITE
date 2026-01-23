@@ -23,8 +23,6 @@
             height: 5.7rem;
             background-size: contain;
             margin: 0 auto;
-
-            
         }
     }
 }
@@ -166,6 +164,24 @@
 }
 
 @media (width <= 767px) {
+
+    .faq{
+        &-hero{
+            height: auto;
+            position: relative;
+            padding-top: 3rem;
+            padding-bottom: 6rem;
+            &__image{
+                background-image: url(../img/hero/faq-mobile-2x.png);
+                width: 16.3rem;
+                height: 10.3rem;
+                background-size: contain;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
     .instructions{
         &-mac{
             &-hero{
