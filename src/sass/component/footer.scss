@@ -58,10 +58,6 @@
                 font-size: 1.1rem;
                 position: relative;
 
-                &.active{
-                    color: #25D5FC;
-                }
-
                 &::before {
                     content: '';
                     display: block;
@@ -111,6 +107,13 @@
                         background-image: url(../img/ico/menu/merch.svg);
                         width: 2.5rem;
                         height: 2.3rem;
+                    }
+                }
+
+                &.active{
+                    color: #25D5FC;
+                    &::before{
+                        filter: invert(100%) invert(68%) sepia(92%) saturate(2054%) hue-rotate(160deg) brightness(105%) contrast(103%);
                     }
                 }
             }

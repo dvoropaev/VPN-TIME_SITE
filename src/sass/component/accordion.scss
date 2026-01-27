@@ -86,6 +86,25 @@
             margin-bottom: 1rem;
         }
     }
+
+    #accordion__item-1{
+        &:checked ~ .accordion__wrapper {
+            max-height: 75rem;
+        }
+    }
+
+    #accordion__item-2{
+        &:checked ~ .accordion__wrapper {
+            max-height: 40rem;
+        }
+    }
+
+    #accordion__item-3{
+        &:checked ~ .accordion__wrapper {
+            max-height: 120rem;
+        }
+    }
+
 }
 
 @media (width >= 768px) {
