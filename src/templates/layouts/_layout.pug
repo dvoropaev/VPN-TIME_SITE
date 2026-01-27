@@ -12,6 +12,8 @@ html
   //- bodyClass задаётся в страницах; по умолчанию только базовый класс page
   body()
     div(class=['page', bodyClass || ''])
+      .cloud__left
+      .cloud__right
       block header
         include ../partials/_header
 

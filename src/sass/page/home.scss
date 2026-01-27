@@ -15,7 +15,7 @@
     }
 
     &-home {
-        background-image: url("../img/bg/bg-home-mobile-2x.png");
+        //background-image: url("../img/bg/bg-home-mobile-2x.png");
     }
 }
 
@@ -125,7 +125,14 @@
 @media (width >= 768px) {
     .page {
         &-home {
-            background-image: url("../img/bg/bg-home.png");
+            //background-image: url("../img/bg/bg-home.png");
+
+            
+
+            background-image: url('../img/bg2/bg-pattern.svg');
+            background-size: 144rem;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .home {

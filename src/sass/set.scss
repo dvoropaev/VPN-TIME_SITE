@@ -155,6 +155,32 @@ main {
         width: 60.5rem;
         margin: 0 auto;
     }
+
+    .cloud{
+        &__left{
+            background-image: url(../img/bg2/bg-cloud.png);
+            height: 58rem;
+            width: 34rem;
+            display: block;
+            z-index: 5;
+            position: absolute;
+            background-size: 92rem;
+            background-position-x: -1.8rem;
+        }
+
+        &__right{
+            background-image: url(../img/bg2/bg-cloud.png);
+            height: 58rem;
+            width: 34rem;
+            display: block;
+            z-index: 5;
+            position: absolute;
+            right: 0;
+            background-size: 92rem;
+            background-position-x: 38.5rem;
+            background-position-y: -1.5rem;
+        }
+    }
 }
 
 // @media (width <= 1440px){
