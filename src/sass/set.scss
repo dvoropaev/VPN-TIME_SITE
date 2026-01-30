@@ -59,7 +59,8 @@ ul.empty-marker{
 }
 
 main {
-    min-height: calc(100vh - 15rem);
+    // min-height: calc(100vh - 15rem);
+    min-height: calc(100vh - 34.2rem);
 }
 
 .img__box{
@@ -77,7 +78,7 @@ main {
   z-index: 10000;
   position: fixed;
   right: 10%;
-  bottom: -10%;
+  bottom: -20%;
   transform: translateY(-50%);
   cursor: pointer;
   border-radius: 50%;
@@ -122,6 +123,14 @@ main {
     justify-content: space-around;
 }
 
+@media (width <= 320px){
+    html {
+        font-size: 8px;
+    }
+}
+
+// font-size: 10px;
+
 @media (width <= 767px) {
     .m-none {
         display: none;
@@ -133,9 +142,32 @@ main {
         }
     }
 
-    // .go-top {
-    //     display: none;
-    // }
+    .cloud{
+        &__left{
+            background-image: url(../img/bg2/bg-cloud.png);
+            height: 17rem;
+            width: 14rem;
+            display: block;
+            z-index: 5;
+            position: absolute;
+            background-size: 36rem;
+            background-position-x: -1.8rem;
+            background-position-y: -5rem;
+        }
+
+        &__right{
+            background-image: url(../img/bg2/bg-cloud.png);
+            height: 18rem;
+            width: 14rem;
+            display: block;
+            z-index: 5;
+            position: absolute;
+            right: 0;
+            background-size: 36rem;
+            background-position-x: 15rem;
+            background-position-y: -5rem;
+        }
+    }
 
     .go-top--show{
         right: .5rem;
@@ -146,9 +178,6 @@ main {
 @media (width >= 768px) {
     html {
         font-size: 0.694vw;
-
-        //1440  10/(1440/100) = 10/14.4 = 0.6944444444444444
-   
     }
 
     .container {
