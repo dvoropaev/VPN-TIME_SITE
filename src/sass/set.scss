@@ -59,8 +59,7 @@ ul.empty-marker{
 }
 
 main {
-    // min-height: calc(100vh - 15rem);
-    min-height: calc(100vh - 34.2rem);
+    min-height: calc(100vh - 14.7rem);
 }
 
 .img__box{
@@ -72,7 +71,6 @@ main {
         object-fit: contain;
     }
 }
-
 
 .go-top {
   z-index: 10000;
@@ -110,14 +108,6 @@ main {
     transition: opacity .5s ease-in-out, overflow .5s ease-in-out; 
 }
 
-// @media (hover: hover){
-
-// }
-
-// @media (width <= 767px){
-
-// }
-
 .cards{
     display: flex;
     justify-content: space-around;
@@ -128,8 +118,6 @@ main {
         font-size: 8px;
     }
 }
-
-// font-size: 10px;
 
 @media (width <= 767px) {
     .m-none {
@@ -180,6 +168,18 @@ main {
         font-size: 0.694vw;
     }
 
+
+
+    .page{
+        .page__bg{
+            background-image: url('../img/bg2/bg-pattern.svg');
+            background-size: 144rem;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    }
+
     .container {
         width: 60.5rem;
         margin: 0 auto;
@@ -210,8 +210,62 @@ main {
             background-position-y: -1.5rem;
         }
     }
+
+    .cloud-mini{
+        &__left{
+            &-1{
+                display: block;
+                position: absolute;
+                width: 17rem;
+                height: 10rem;
+                top: 61rem;
+                background-image: url('../img/bg2/bg-cloud-mini.png');
+                background-size: 92rem;
+                background-position-y: 14rem;
+                background-position-x: -1rem;
+            }
+
+            &-2{
+                display: block;
+                position: absolute;
+                width: 15rem;
+                height: 10rem;
+                top: 82rem;
+                background-image: url('../img/bg2/bg-cloud-mini.png');
+                background-size: 92rem;
+                background-position-y: 13rem;
+                background-position-x: -71rem;
+                transform: scale(-1, 1);
+            }
+
+        }
+
+        &__right{
+            &-1{
+                display: block;
+                position: absolute;
+                width: 24rem;
+                height: 7rem;
+                top: 65rem;
+                right: 0;
+                background-image: url('../img/bg2/bg-cloud.png');
+                background-size: 120rem;
+                background-position-y: 7rem;
+                background-position-x: 27rem;
+            }
+
+            &-2{
+                display: block;
+                position: absolute;
+                width: 24rem;
+                height: 17rem;
+                top: 82rem;
+                right: 0;
+                background-image: url('../img/bg2/bg-cloud-mini.png');
+                background-size: 92rem;
+                background-position-y: 17rem;
+                background-position-x: 24rem;
+            }                    
+        }
+    }
 }
-
-// @media (width <= 1440px){
-
-// }

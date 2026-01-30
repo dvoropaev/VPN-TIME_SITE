@@ -12,17 +12,18 @@ html
   //- bodyClass задаётся в страницах; по умолчанию только базовый класс page
   body()
     div(class=['page', bodyClass || ''])
-      .cloud__left
-      .cloud__right
-      block header
-        include ../partials/_header
+      .page__bg
+        .cloud__left
+        .cloud__right
+        block header
+          include ../partials/_header
 
-      block content
+        block content
 
-      block footer
-        include ../partials/_footer
+        block footer
+          include ../partials/_footer
 
-      .go-top
+        .go-top
 
       block scripts
         - var basePath = typeof basePath !== 'undefined' ? basePath : './'

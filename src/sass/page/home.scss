@@ -127,73 +127,15 @@
         &-home {
             //background-image: url("../img/bg/bg-home.png");
             
-            background-image: url('../img/bg2/bg-pattern.svg');
-            background-size: 144rem;
-            background-repeat: no-repeat;
-            background-position: center;
+            // background-image: url('../img/bg2/bg-pattern.svg');
+            // background-size: 144rem;
+            // background-repeat: no-repeat;
+            // background-position: center;
 
             .hero{
                 background-image: url('../img/hero2/bg-trees.png');
                 background-position: center top;
                 background-size: 107.2rem;
-            }
-
-            .cloud-mini{
-                &__left{
-                    &-1{
-                        display: block;
-                        position: absolute;
-                        width: 17rem;
-                        height: 10rem;
-                        top: 61rem;
-                        background-image: url('../img/bg2/bg-cloud-mini.png');
-                        background-size: 92rem;
-                        background-position-y: 14rem;
-                        background-position-x: -1rem;
-                    }
-
-                    &-2{
-                        display: block;
-                        position: absolute;
-                        width: 15rem;
-                        height: 10rem;
-                        top: 82rem;
-                        background-image: url('../img/bg2/bg-cloud-mini.png');
-                        background-size: 92rem;
-                        background-position-y: 13rem;
-                        background-position-x: -71rem;
-                        transform: scale(-1, 1);
-                    }
-
-                }
-
-                &__right{
-                    &-1{
-                        display: block;
-                        position: absolute;
-                        width: 24rem;
-                        height: 7rem;
-                        top: 65rem;
-                        right: 0;
-                        background-image: url('../img/bg2/bg-cloud.png');
-                        background-size: 120rem;
-                        background-position-y: 7rem;
-                        background-position-x: 27rem;
-                    }
-
-                    &-2{
-                        display: block;
-                        position: absolute;
-                        width: 24rem;
-                        height: 17rem;
-                        top: 82rem;
-                        right: 0;
-                        background-image: url('../img/bg2/bg-cloud-mini.png');
-                        background-size: 92rem;
-                        background-position-y: 17rem;
-                        background-position-x: 24rem;
-                    }                    
-                }
             }
         }
 
