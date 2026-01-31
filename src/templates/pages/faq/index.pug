@@ -10,80 +10,84 @@ block title
 
 block content
   main
-    .container
-      .faq-hero
-        .hero__bg_trees
-        .faq-hero__image
+    
+    .content
+      section.faq-hero
+        .hero__bg-trees
+        .hero__bg-server
+        .container
+          .faq-hero__image
 
-      .accordion
-        .accordion__item.el-1
-          input(type='checkbox' class="accordion__checkbox" id="accordion__item-1" name="accordion")
-          label(for="accordion__item-1" class="accordion__label")
-           .accordion__title
-              span.accordion__ico
-                span.thick-triangle
-              span Оплата и тарифы
-          .accordion__wrapper
-            .accordion__content 
-              .question Вопрос: Как работает оплата?
-              .answer Ответ: Пополняете баланс в боте, а списание происходит поминутно за время активного подключения. Если у вас несколько устройств, время списывается за каждое устройство.
-            .accordion__content 
-              .question Вопрос: Как оплатить?
-              .answer Ответ: Войдите в меню «Баланс», выберите желаемый к покупке пакет часов.
-            .accordion__content 
-              .question Вопрос: Как узнать, что время закончилось?
-              .answer Ответ: Бот предупредит о низком балансе.
-            .accordion__content 
-              .question Вопрос: Любой трафик считается активным или с определённого объёма?
-              .answer Ответ: Мы не смотрим на трафик, мы смотрим на время подключения и отключения.
-            .accordion__content 
-              .question Вопрос: Сколько длится пробный период?
-              .answer Ответ: Новым пользователям выдаётся несколько часов бесплатного доступа. Точное количество можно уточнить в боте.
+      .container
+        .accordion
+          .accordion__item.el-1
+            input(type='checkbox' class="accordion__checkbox" id="accordion__item-1" name="accordion")
+            label(for="accordion__item-1" class="accordion__label")
+              .accordion__title
+                  span.accordion__ico
+                    span.thick-triangle
+                  span Оплата и тарифы
+            .accordion__wrapper
+              .accordion__content 
+                .question Вопрос: Как работает оплата?
+                .answer Ответ: Пополняете баланс в боте, а списание происходит поминутно за время активного подключения. Если у вас несколько устройств, время списывается за каждое устройство.
+              .accordion__content 
+                .question Вопрос: Как оплатить?
+                .answer Ответ: Войдите в меню «Баланс», выберите желаемый к покупке пакет часов.
+              .accordion__content 
+                .question Вопрос: Как узнать, что время закончилось?
+                .answer Ответ: Бот предупредит о низком балансе.
+              .accordion__content 
+                .question Вопрос: Любой трафик считается активным или с определённого объёма?
+                .answer Ответ: Мы не смотрим на трафик, мы смотрим на время подключения и отключения.
+              .accordion__content 
+                .question Вопрос: Сколько длится пробный период?
+                .answer Ответ: Новым пользователям выдаётся несколько часов бесплатного доступа. Точное количество можно уточнить в боте.
 
-        .accordion__item.el-2
-          input(type='checkbox' class="accordion__checkbox" id="accordion__item-2" name="accordion")
-          label(for="accordion__item-2" class="accordion__label")
-           .accordion__title
-              span.accordion__ico
-                span.thick-triangle
-              span Устройства
-          .accordion__wrapper
-            .accordion__content 
-              .question Вопрос: Для другого устройства нужен отдельный ключ?**
-              .answer Ответ: Да. Один ключ будет работать только с одним устройством.
-            .accordion__content 
-              .question Вопрос: Как подключить несколько устройств?
-              .answer Ответ: Просто запросите для каждого устройства дополнительные ключи, за них доплачивать не нужно. По умолчанию стоит ограничение в 10 ключей на пользователя. Если вам нужно больше - свяжитесь с нами через бота.
+          .accordion__item.el-2
+            input(type='checkbox' class="accordion__checkbox" id="accordion__item-2" name="accordion")
+            label(for="accordion__item-2" class="accordion__label")
+              .accordion__title
+                  span.accordion__ico
+                    span.thick-triangle
+                  span Устройства
+            .accordion__wrapper
+              .accordion__content 
+                .question Вопрос: Для другого устройства нужен отдельный ключ?**
+                .answer Ответ: Да. Один ключ будет работать только с одним устройством.
+              .accordion__content 
+                .question Вопрос: Как подключить несколько устройств?
+                .answer Ответ: Просто запросите для каждого устройства дополнительные ключи, за них доплачивать не нужно. По умолчанию стоит ограничение в 10 ключей на пользователя. Если вам нужно больше - свяжитесь с нами через бота.
 
-        .accordion__item.el-3
-          input(type='checkbox' class="accordion__checkbox" id="accordion__item-3" name="accordion")
-          label(for="accordion__item-3" class="accordion__label")
-           .accordion__title
-              span.accordion__ico
-                span.thick-triangle
-              span Подключение и технические нюансы
-          .accordion__wrapper
-            .accordion__content 
-              .question Вопрос: Почему не могу подключиться?
-              .answer Ответ: Убедитесь, что баланс положительный и вы используете актуальный конфигурационный файл (ключ).
-            .accordion__content 
-              .question Вопрос: Ошибка аутентификации, что делать?
-              .answer Ответ: Убедитесь, что баланс положительный и вы используете актуальный конфигурационный файл (ключ).
-            .accordion__content 
-              .question Вопрос: Почему не работает YouTube?
-              .answer Ответ: Проверьте, не установлен ли у вас you-boost или любой другой "ускоритель" ютуба. Они могут мешать.
-            .accordion__content 
-              .question Вопрос: Есть ли возможность управлять, какой трафик идет через VPN, а какой нет?**
-              .answer Ответ: К сожалению такой возможности нет.
-            .accordion__content 
-              .question Вопрос: Можно ли подключить VPN на роутер?
-              .answer Ответ: Если модель поддерживает режим OpenVPN‑клиента, импортируйте в него полученный .ovpn файл. Но мы не оказываем помощь в настройке роутеров.
-            .accordion__content 
-              .question Вопрос: Планируется поддержка других протоколов?
-              .answer Ответ: Сейчас сервис работает только по OpenVPN. Возможность подключения по другим протоколам рассматривается, но конкретных сроков нет. 
-            .accordion__content 
-              .question Вопрос: Приложение не запускается на Windows 7. Что делать?
-              .answer Ответ: Мы не поддерживаем windows 7                                     
+          .accordion__item.el-3
+            input(type='checkbox' class="accordion__checkbox" id="accordion__item-3" name="accordion")
+            label(for="accordion__item-3" class="accordion__label")
+              .accordion__title
+                  span.accordion__ico
+                    span.thick-triangle
+                  span Подключение и технические нюансы
+            .accordion__wrapper
+              .accordion__content 
+                .question Вопрос: Почему не могу подключиться?
+                .answer Ответ: Убедитесь, что баланс положительный и вы используете актуальный конфигурационный файл (ключ).
+              .accordion__content 
+                .question Вопрос: Ошибка аутентификации, что делать?
+                .answer Ответ: Убедитесь, что баланс положительный и вы используете актуальный конфигурационный файл (ключ).
+              .accordion__content 
+                .question Вопрос: Почему не работает YouTube?
+                .answer Ответ: Проверьте, не установлен ли у вас you-boost или любой другой "ускоритель" ютуба. Они могут мешать.
+              .accordion__content 
+                .question Вопрос: Есть ли возможность управлять, какой трафик идет через VPN, а какой нет?**
+                .answer Ответ: К сожалению такой возможности нет.
+              .accordion__content 
+                .question Вопрос: Можно ли подключить VPN на роутер?
+                .answer Ответ: Если модель поддерживает режим OpenVPN‑клиента, импортируйте в него полученный .ovpn файл. Но мы не оказываем помощь в настройке роутеров.
+              .accordion__content 
+                .question Вопрос: Планируется поддержка других протоколов?
+                .answer Ответ: Сейчас сервис работает только по OpenVPN. Возможность подключения по другим протоколам рассматривается, но конкретных сроков нет. 
+              .accordion__content 
+                .question Вопрос: Приложение не запускается на Windows 7. Что делать?
+                .answer Ответ: Мы не поддерживаем windows 7                                     
 
 
     .box__btn

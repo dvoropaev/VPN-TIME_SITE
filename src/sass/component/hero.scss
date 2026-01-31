@@ -14,15 +14,18 @@
 
 .faq{
     &-hero{
-        height: 23rem;
+        height: 32rem;
         position: relative;
         padding-top: 1rem;
         &__image{
+            position: relative;
             background-image: url(../img/hero/faq-2x.png);
-            width: 9rem;
-            height: 5.7rem;
+            width: 18rem;
+            height: 11.4rem;
             background-size: contain;
             margin: 0 auto;
+            z-index: 3;
+
         }
     }
 }
@@ -145,19 +148,28 @@
         padding-top: 1.8rem;
         padding-bottom: 1.8rem;
 
-        &__bg_trees{
-            background-image: url('../img/hero2/bg-trees.png');
-            background-position: center top;
-            background-size: 107.2rem;
-            display: block;
-            height: 22rem;
-            width: 107.2rem;
-            position: absolute;
-            left: 51%;
-            transform: translateX(-50%);
-            z-index: 1;
-            top: 0;
+        &__bg{
+
+
+            &-trees{
+                background-image: url('../img/hero2/bg-trees.png');
+                background-position: center top;
+                background-size: 107.2rem;
+                display: block;
+                height: 22rem;
+                width: 107.2rem;
+                position: absolute;
+                left: 51%;
+                transform: translateX(-50%);
+                z-index: 1;
+                top: 0;
+            }
+
+
+
         }
+
+        
 
         &__image {
             background-image: url(../img/hero/vpn-time.png);
@@ -166,6 +178,31 @@
             background-size: cover;
         }
     }
+
+    .page{
+        &-faq{
+            .hero {
+                &__bg{
+                    &-server{
+                        background-image: url('../img/hero2/bg-server-faq-2x.png');
+                        background-position-x: -17rem;
+                        background-position-y: -3rem;
+                        background-size: 172.5rem;
+                        display: block;
+                        height: 32rem;
+                        width: 130rem;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 2;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
 
     .instructions{
         &-hero{
