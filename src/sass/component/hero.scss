@@ -32,16 +32,19 @@
 
 .rules{
     &-hero{
-        height: 23rem;
+        height: 32rem;
         position: relative;
         padding-top: 1rem;
         &__image{
             background-image: url(../img/hero/rules-2x.png);
-            width: 27.1rem;
-            height: 21.2rem;
-            background-size: contain;
+            width: 40rem;
+            height: 30rem;
+            background-size: 50rem 39.4rem;
             margin: 0 auto;
-            background-position-x: 2rem;
+            background-position-x: -7rem;
+            background-position-y: -3rem;
+            position: relative;
+            z-index: 3;
 
             
         }
@@ -149,8 +152,6 @@
         padding-bottom: 1.8rem;
 
         &__bg{
-
-
             &-trees{
                 background-image: url('../img/hero2/bg-trees.png');
                 background-position: center top;
@@ -164,9 +165,6 @@
                 z-index: 1;
                 top: 0;
             }
-
-
-
         }
 
         
@@ -178,6 +176,26 @@
             background-size: cover;
         }
     }
+
+
+    .hero {
+        &__bg{
+            &-server{
+                background-image: url('../img/hero2/bg-server-2x.png');
+                background-position-x: -17rem;
+                background-position-y: -.5rem;
+                background-size: 172.5rem;
+                display: block;
+                height: 32rem;
+                width: 130rem;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                top: 0;
+            }
+        }
+    }    
 
     .page{
         &-faq{
@@ -200,9 +218,9 @@
                 }
             }
         }
+
+
     }
-
-
 
     .instructions{
         &-hero{
@@ -211,10 +229,31 @@
             }
         }
     }
+
+
     
 }
 
 @media (width <= 767px) {
+
+    .hero {
+        &__bg{
+            &-server{
+                background-image: url('../img/hero2/bg-server-2x.png');
+                background-position-x: -14rem;
+                background-position-y: 0;
+                background-size: 90rem;
+                display: block;
+                height: 18rem;
+                width: 60rem;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                top: 0;
+            }
+        }
+    } 
 
     .faq{
         &-hero{
@@ -228,6 +267,25 @@
                 height: 10.3rem;
                 background-size: contain;
                 margin: 0 auto;
+            }
+        }
+    }
+
+    .rules{
+        &-hero{
+            height: 18rem;
+            position: relative;
+            padding-top: 1rem;
+            overflow: hidden;
+            &__image{
+                width: 25rem;
+                height: 16rem;
+                background-size: 25rem 19.7rem;
+                margin: 0 auto;
+                background-position-x: center;
+                background-position-y: -2rem;
+                position: relative;
+                z-index: 3;
             }
         }
     }
