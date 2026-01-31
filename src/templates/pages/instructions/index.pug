@@ -10,26 +10,42 @@ block title
 
 block content
   main
-    .container
-      .instructions-hero
-        .instructions-hero__image
+    .content
+      section.instructions-hero
+        .hero__bg-trees
+        .hero__bg-server
+        .container
+          .instructions-hero__image
 
-      .instructions__btns
-        .instructions__btns-box
-            a(href="./windows/" class="btn  btn-white")
-                .text Windows
-        .instructions__btns-box
-            a(href="./iphone/" class="btn  btn-white")
-                .text iPhone
-        .instructions__btns-box
-            a(href="./mac/" class="btn  btn-white")
-                .text macOS  
-        .instructions__btns-box                      
-            a(href="./android/" class="btn  btn-white")
-                .text Android
-        .instructions__btns-box
-            a(href="./other/" class="btn  btn-white")
-                .text Другое            
+      .container
+
+        .instructions__info
+          .instructions__info-wrapper
+            .title Xray
+            .instructions__info-content
+              p Xray - современная технология обхода блокировок.
+              p Поддерживаются следующие локации:
+              p Нидерланды
+              p США
+              p Сервер, на котором размещен торрент-трафик
+
+            div.instructions__info-btn
+              a(href="#" class="btn btn-green" target="_blank")
+                span.text Настроить Xray
+
+        .instructions__info
+          .instructions__info-wrapper
+            .title OpenVPN
+            .instructions__info-content
+              p OpenVPN - устаревший метод обхода блокировок.
+              p Поддерживаются следующие локации:
+              p Нидерланды
+              p США
+              p Сервер, на котором размещен торрент-трафик
+
+            div.instructions__info-btn
+              a(href="open-vpn/" class="btn btn-green" )
+                span.text Настроить OpenVPN              
 
         
 

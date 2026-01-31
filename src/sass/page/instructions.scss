@@ -11,6 +11,13 @@
             justify-content: center;
             padding-bottom: 3.5rem;
         }
+
+        // .home__info-content{
+        //     text-align: left;
+        //     padding-bottom: 1.6rem;
+        // }
+
+
     }
 
     &-instructions-mac,
@@ -28,6 +35,31 @@
             display: flex;
             justify-content: center;
             padding-bottom: 3.5rem;
+        }
+    }
+}
+
+.instructions{
+    &__info {
+        max-width: 60.5rem;
+        margin-bottom: 1.8rem;
+        padding: 2rem 5rem;
+        border-radius: 3.5rem;
+        background-color: rgb(255 255 255 / 90%);
+
+        .title{
+            text-align: center;
+        }
+
+        &-btn{
+           text-align: center;
+        }
+
+        &-content {
+            padding-bottom: 1.8rem;
+            .btn{
+                margin-top: 1.8rem;
+            }
         }
     }
 }
@@ -80,7 +112,7 @@
 @media (width <= 767px) {
     .page {
         &-instructions {
-            background-image: url("../img/bg/bg-instructions-mobile-2x.png");
+            //background-image: url("../img/bg/bg-instructions-mobile-2x.png");
             main {
                 min-height: 100vh;
             }
@@ -133,7 +165,7 @@
 @media (width >= 768px) {
     .page {
         &-instructions {
-            background-image: url("../img/bg/bg-instructions.png");
+           // background-image: url("../img/bg/bg-instructions.png");
         }
 
         &-instructions-mac {
