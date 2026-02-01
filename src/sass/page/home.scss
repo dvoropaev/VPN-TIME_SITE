@@ -15,7 +15,7 @@
     }
 
     &-home {
-        background-image: url("../img/bg/bg-home-mobile-2x.png");
+        //background-image: url("../img/bg/bg-home-mobile-2x.png");
     }
 }
 
@@ -124,9 +124,6 @@
 
 @media (width >= 768px) {
     .page {
-        &-home {
-            background-image: url("../img/bg/bg-home.png");
-        }
 
         .home {
             &__info {

@@ -1,0 +1,48 @@
+extends ../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '../../'
+  - var bodyClass = 'page-instructions'
+  - var currentPage = 'instructions'
+
+block title
+  title Правила
+
+block content
+  main
+    .content
+      section.instructions-hero
+        .hero__bg-trees
+        .hero__bg-server
+        .container
+          .instructions-hero__image
+
+
+      .container
+
+        .instructions__btns
+          .instructions__btns-box
+              a(href="./windows/" class="btn  btn-white")
+                  .text Windows
+          .instructions__btns-box
+              a(href="./iphone/" class="btn  btn-white")
+                  .text iPhone
+          .instructions__btns-box
+              a(href="./mac/" class="btn  btn-white")
+                  .text macOS  
+          .instructions__btns-box                      
+              a(href="./android/" class="btn  btn-white")
+                  .text Android
+          .instructions__btns-box
+              a(href="./other/" class="btn  btn-white")
+                  .text Другое            
+
+        
+
+
+
+
+    .box__btn
+      a(href="https://t.me/vpn_time_support" class="btn btn-blue" target="_blank")
+        span.icon.icon-telegram
+        .text связаться с нами

@@ -46,7 +46,7 @@
     .page {
 
         &-merch{
-            background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
+            //background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
             main{
                 min-height: 100vh;
             }
@@ -67,7 +67,7 @@
 @media (width >= 768px) {
     .page {
         &-merch {
-            background-image: url("../img/bg/bg-merch.png");
+            //background-image: url("../img/bg/bg-merch.png");
         }
     }
 

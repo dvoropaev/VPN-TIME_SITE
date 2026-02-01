@@ -1,7 +1,7 @@
-extends ../../../layouts/_layout.pug
+extends ../../../../layouts/_layout.pug
 
 block vars
-  - var basePath = '../../'
+  - var basePath = '../../../'
   - var bodyClass = 'page-instructions-other'
   - var currentPage = 'instructions-other'
 
@@ -10,9 +10,12 @@ block title
 
 block content
   main
-    .container
-      .instructions-other-hero
+    section.hero
+      .hero__bg-trees
+      .container
         .instructions-other-hero__image
+
+    .container
     
       .instructions-mac__info
         .title 

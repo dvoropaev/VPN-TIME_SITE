@@ -32,7 +32,7 @@
     .page {
 
         &-rules{
-            background-image: url("../img/bg/bg-rules-mobile-2x.png");
+            //background-image: url("../img/bg/bg-rules-mobile-2x.png");
             main{
                 min-height: 100vh;
             }
@@ -44,7 +44,7 @@
 @media (width >= 768px) {
     .page {
         &-rules {
-            background-image: url("../img/bg/bg-rules.png");
+            background-image: url("../img/bg2/bg-rules.png");
         }
     }
 }
