@@ -120,6 +120,31 @@ main {
     }
 }
 
+.ico__text{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.flag{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-size: contain;
+    &__netherlands{
+        background-image: url(../img/svg/flag-netherlands.svg);
+    }
+    &__usa{
+        background-image: url(../img/svg/flag-united-states.svg);
+    }
+
+    &__torrent{
+        background-image: url(../img/svg/utorrent.svg);
+    }
+}
+
+
+
 @media (width <= 320px){
     html {
         font-size: 8px;
