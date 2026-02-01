@@ -141,6 +141,10 @@ main {
         }
     }
 
+    main{
+        min-height: 100vh;
+    }
+
     .cloud{
         &__left{
             background-image: url(../img/bg2/bg-cloud.png);
