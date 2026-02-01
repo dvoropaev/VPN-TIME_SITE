@@ -12,12 +12,14 @@
     }
 }
 
-.faq{
-    &-hero{
+
+.faq {
+    &-hero {
         height: 32rem;
         position: relative;
         padding-top: 1rem;
-        &__image{
+
+        &__image {
             position: relative;
             background-image: url(../img/hero/faq-2x.png);
             width: 18rem;
@@ -30,12 +32,13 @@
     }
 }
 
-.rules{
-    &-hero{
+.rules {
+    &-hero {
         height: 32rem;
         position: relative;
         padding-top: 1rem;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/rules-2x.png);
             width: 40rem;
             height: 30rem;
@@ -46,107 +49,123 @@
             position: relative;
             z-index: 3;
 
-            
+
         }
     }
 }
 
-.instructions{
-    &-hero{
+.instructions {
+    &-hero {
         height: 32rem;
         position: relative;
         padding-top: 1rem;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/instructions-2x.png);
         }
     }
 }
 
-.instructions-mac{
-    &-hero{
+.instructions-mac {
+    &-hero {
         height: 23rem;
         position: relative;
         padding-top: 1rem;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/instructions-mac-2x.png);
             width: 22.2rem;
             height: 17.1rem;
             background-size: contain;
             margin: 0 auto;
+            position: relative;
+            z-index: 3;
         }
     }
 }
 
-.instructions-windows{
-    &-hero{
+.instructions-windows {
+    &-hero {
         height: 23rem;
         position: relative;
         padding-top: 1rem;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/instructions-win-2x.png);
             width: 22.2rem;
             height: 17.1rem;
             background-size: contain;
             margin: 0 auto;
+            position: relative;
+            z-index: 3;
         }
     }
 }
 
-.instructions-iphone{
-    &-hero{
+.instructions-iphone {
+    &-hero {
         height: 23rem;
         position: relative;
         padding-top: 1rem;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/instructions-iphone-2x.png);
             width: 16.1rem;
             height: 15.3rem;
             background-size: contain;
             margin: 0 auto;
+            position: relative;
+            z-index: 3;
         }
     }
 }
 
-.instructions-android{
-    &-hero{
+.instructions-android {
+    &-hero {
         //height: 23rem;
         padding-top: 4.5rem;
         padding-bottom: 1rem;
         position: relative;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/instructions-android-2x.png);
             width: 15.4rem;
             height: 15rem;
             background-size: contain;
             margin: 0 auto;
+            position: relative;
+            z-index: 3;
         }
     }
 }
 
-.instructions-other{
-    &-hero{
+.instructions-other {
+    &-hero {
         position: relative;
         padding-top: 4rem;
         padding-bottom: 1rem;
-        &__image{
+
+        &__image {
             background-image: url(../img/hero/instructions-other-2x.png);
             width: 21.4rem;
             height: 17rem;
             background-size: contain;
             margin: 0 auto;
+            position: relative;
+            z-index: 3;
         }
     }
 }
 
-@media (width >= 768px) {
+@media (width >=768px) {
     .hero {
         position: relative;
         height: 19.6rem;
         padding-top: 1.8rem;
         padding-bottom: 1.8rem;
 
-        &__bg{
-            &-trees{
+        &__bg {
+            &-trees {
                 background-image: url('../img/hero2/bg-trees.png');
                 background-position: center top;
                 background-size: 107.2rem;
@@ -161,8 +180,6 @@
             }
         }
 
-        
-
         &__image {
             background-image: url(../img/hero/vpn-time.png);
             width: 100%;
@@ -175,8 +192,8 @@
 
 
     .hero {
-        &__bg{
-            &-server{
+        &__bg {
+            &-server {
                 background-image: url('../img/hero2/bg-server-2x.png');
                 background-position-x: -17rem;
                 background-position-y: -.5rem;
@@ -191,13 +208,13 @@
                 top: 0;
             }
         }
-    }    
+    }
 
-    .page{
-        &-faq{
+    .page {
+        &-faq {
             .hero {
-                &__bg{
-                    &-server{
+                &__bg {
+                    &-server {
                         background-image: url('../img/hero2/bg-server-faq-2x.png');
                         background-position-x: -17rem;
                         background-position-y: -3rem;
@@ -218,20 +235,13 @@
 
     }
 
-    // .instructions{
-    //     &-hero{
-    //         &__image{
-    //             background-image: url(../img/hero/instructions-2x.png);
-    //         }
-    //     }
-    // }
-
-    .instructions{
-        &-hero{
+    .instructions {
+        &-hero {
             height: 32rem;
             position: relative;
             padding-top: 1rem;
-            &__image{
+
+            &__image {
                 background-image: url(../img/hero/instructions-2x.png);
                 width: 60rem;
                 height: 32rem;
@@ -243,17 +253,17 @@
                 z-index: 3;
             }
         }
-    }    
+    }
 
 
-    
+
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
 
     .hero {
-        &__bg{
-            &-server{
+        &__bg {
+            &-server {
                 background-image: url('../img/hero2/bg-server-2x.png');
                 background-position-x: -14rem;
                 background-position-y: 0;
@@ -268,15 +278,16 @@
                 top: 0;
             }
         }
-    } 
+    }
 
-    .faq{
-        &-hero{
+    .faq {
+        &-hero {
             height: auto;
             position: relative;
             padding-top: 3rem;
             padding-bottom: 6rem;
-            &__image{
+
+            &__image {
                 background-image: url(../img/hero/faq-mobile-2x.png);
                 width: 16.3rem;
                 height: 10.3rem;
@@ -286,13 +297,14 @@
         }
     }
 
-    .rules{
-        &-hero{
+    .rules {
+        &-hero {
             height: 18rem;
             position: relative;
             padding-top: 1rem;
             overflow: hidden;
-            &__image{
+
+            &__image {
                 width: 25rem;
                 height: 16rem;
                 background-size: 25rem 19.7rem;
@@ -305,13 +317,14 @@
         }
     }
 
-    .instructions{
-        &-hero{
+    .instructions {
+        &-hero {
             height: 18rem;
             position: relative;
             padding-top: 1rem;
             overflow: hidden;
-            &__image{
+
+            &__image {
                 width: 25rem;
                 height: 16rem;
                 background-size: 25rem 17rem;
@@ -325,22 +338,22 @@
     }
 
 
-    .instructions{
-        &-mac{
-            &-hero{
+    .instructions {
+        &-mac {
+            &-hero {
                 padding-left: 6rem;
-            }
-        }  
-
-        &-android{
-            &-hero{
-                padding-top: 1rem;
-                padding-bottom: 6rem; 
             }
         }
 
-        &-other{
-            &-hero{
+        &-android {
+            &-hero {
+                padding-top: 1rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        &-other {
+            &-hero {
                 padding-top: 0rem;
                 padding-bottom: 4rem;
             }
@@ -348,5 +361,3 @@
         }
     }
 }
-
-
