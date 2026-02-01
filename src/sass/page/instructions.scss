@@ -137,6 +137,28 @@
         &-instructions-other {
            // background-image: url("../img/bg/bg-instructions-mobile-mac2x.png");
         }
+
+        &-instructions-mac,
+        &-instructions-windows,
+        &-instructions-iphone,
+        &-instructions-android,
+        &-instructions-other {
+            .hero{
+                padding: 0;
+                height: 17.1rem;
+            }
+         }
+
+         &-instructions-iphone{
+            .hero{
+                padding-top: 1.8rem;
+            }
+         }
+         &-instructions-android{
+            .hero{
+                padding-top: 2.1rem;
+            }
+         }
     }
 
     .win {
