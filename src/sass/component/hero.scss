@@ -13,6 +13,7 @@
 }
 
 
+
 .faq {
     &-hero {
         height: 32rem;
@@ -20,14 +21,15 @@
         padding-top: 1rem;
 
         &__image {
-            position: relative;
-            background-image: url(../img/hero/faq-2x.png);
-            width: 18rem;
-            height: 11.4rem;
-            background-size: contain;
+            background-image: url(../img/hero2/faq-2x.png);
+            width: 40rem;
+            height: 30rem;
+            background-size: 50rem 39.4rem;
             margin: 0 auto;
+            background-position-x: -7rem;
+            background-position-y: -6rem;
+            position: relative;
             z-index: 3;
-
         }
     }
 }
@@ -210,31 +212,6 @@
         }
     }
 
-    .page {
-        &-faq {
-            .hero {
-                &__bg {
-                    &-server {
-                        background-image: url('../img/hero2/bg-server-faq-2x.png');
-                        background-position-x: -17rem;
-                        background-position-y: -3rem;
-                        background-size: 172.5rem;
-                        display: block;
-                        height: 32rem;
-                        width: 130rem;
-                        position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        z-index: 2;
-                        top: 0;
-                    }
-                }
-            }
-        }
-
-
-    }
-
     .instructions {
         &-hero {
             height: 32rem;
@@ -280,19 +257,23 @@
         }
     }
 
+
     .faq {
         &-hero {
-            height: auto;
+            height: 18rem;
             position: relative;
-            padding-top: 3rem;
-            padding-bottom: 6rem;
+            padding-top: 1rem;
+            overflow: hidden;
 
             &__image {
-                background-image: url(../img/hero/faq-mobile-2x.png);
-                width: 16.3rem;
-                height: 10.3rem;
-                background-size: contain;
+                width: 25rem;
+                height: 16rem;
+                background-size: 25rem 19.7rem;
                 margin: 0 auto;
+                background-position-x: center;
+                background-position-y: -2rem;
+                position: relative;
+                z-index: 3;
             }
         }
     }
