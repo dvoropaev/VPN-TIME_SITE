@@ -14,102 +14,100 @@
   </head>
   <body>
     <div class="page page-instructions-other">
-      <div class="page__bg">
-        <div class="cloud__left"></div>
-        <div class="cloud__right"></div><header id="header" class="header">
+      <div class="cloud__left"></div>
+      <div class="cloud__right"></div><header id="header" class="header">
 <div class="container">
 <nav class="header__nav"><a class="header__nav-item" href="../../">Главная</a><a class="header__nav-item" href="../../faq/">Faq</a><a class="header__nav-item" href="../../rules/">Правила</a><a class="header__nav-item" href="../../instructions/">Инструкции</a><a class="header__nav-item" href="../../merch/">Мерч</a></nav>
 </div>
 </header>
-        <main>
-          <div class="container">
-            <div class="instructions-other-hero">
-              <div class="instructions-other-hero__image"></div>
+      <main>
+        <div class="container">
+          <div class="instructions-other-hero">
+            <div class="instructions-other-hero__image"></div>
+          </div>
+          <div class="instructions-mac__info">
+            <div class="title"> 
+              <div>Настройка </div>
+              <div>на других устройствах </div>
             </div>
-            <div class="instructions-mac__info">
-              <div class="title"> 
-                <div>Настройка </div>
-                <div>на других устройствах </div>
-              </div>
-              <div class="instructions-mac__info-content">
-                <p> <span class="text-700">Важно! </span>Мы не гарантируем стабильную работу сервиса на перечисленных ниже платформах. При возникновении трудностей обращайтесь в техподдержку.</p>
-              </div>
-            </div>
-            <div class="instructions-mac__info">
-              <div class="title__left">Android TV</div>
-              <div class="instructions-mac__info-content">
-                <p>Наш сервис поддерживает только телевизоры на операционной системе Android.</p>
-                <p>Для подключения используйте приложение <a href="#" target="_blank">OpenVPN for Android.</a></p>
-              </div>
-            </div>
-            <div class="instructions-mac__info">
-              <div class="title__left">Android Auto</div>
-              <div class="instructions-mac__info-content">
-                <p>Настройка выполняется аналогично смартфонам на Android.</p>
-              </div>
-            </div>
-            <div class="instructions-mac__info">
-              <div class="title__left">Linux</div>
-              <div class="instructions-mac__info-content">
-                <p>1. Установка</p>
-                <p class="text-700">Debian / Ubuntu</p>
-                <div class="instructions__info-box"> 
-                  <p>sudo apt update</p>
-                  <p>sudo apt install -y openvpn</p>
-                </div>
-                <p class="text-700">CentOS / RHEL 7</p>
-                <div class="instructions__info-box"> 
-                  <p>sudo yum install -y epel-release</p>
-                  <p>sudo yum install -y openvpn</p>
-                </div>
-                <p class="text-700">CentOS / RHEL 8+ / Fedora</p>
-                <div class="instructions__info-box"> 
-                  <p>sudo dnf install -y openvpn  </p>
-                </div>
-                <p class="text-700">Arch Linux</p>
-                <div class="instructions__info-box"> 
-                  <p>sudo pacman -Sy --noconfirm openvpn   </p>
-                </div>
-                <p class="text-700">openSUSE</p>
-                <div class="instructions__info-box"> 
-                  <p>sudo zypper refresh</p>
-                  <p>sudo zypper install -y openvpn</p>
-                </div>
-                <p>2. Подключение с использованием  .ovpn файла</p>
-                <p>
-                  <ol class="instructions__ul"> 
-                    <li>Скопируйте файл client.ovpn в каталог ~/openvpn/.</li>
-                    <li>Запустите OpenVPN
-                      <div class="instructions__info-box"> 
-                        <p>sudo openvpn --config ~/openvpn/client.ovpn</p>
-                      </div>
-                    </li>
-                    <li>Чтобы запустить OpenVPN в фоне
-                      <div class="instructions__info-box"> 
-                        <p>sudo nohup openvpn --config ~/openvpn/client.ovpn > ~/openvpn/openvpn.log 2>&1 &</p>
-                      </div>
-                    </li>
-                    <li>Для остановки используйте
-                      <div class="instructions__info-box"> 
-                        <p>pkill openvpn</p>
-                      </div>
-                    </li>
-                  </ol>
-                </p>
-              </div>
+            <div class="instructions-mac__info-content">
+              <p> <span class="text-700">Важно! </span>Мы не гарантируем стабильную работу сервиса на перечисленных ниже платформах. При возникновении трудностей обращайтесь в техподдержку.</p>
             </div>
           </div>
-          <div class="box__btn"><a class="btn btn-blue" href="https://t.me/vpn_time_support" target="_blank"><span class="icon icon-telegram"></span>
-              <div class="text">связаться с нами</div></a></div>
-        </main>
-        <footer class="footer">
-          <div class="container">
-            <nav class="footer__nav"><a class="footer__nav-item icon-home" href="../../">Главная</a><a class="footer__nav-item icon-faq" href="../../faq/">Faq</a><a class="footer__nav-item icon-rules" href="../../rules/">Правила</a><a class="footer__nav-item icon-instructions" href="../../instructions/">Инструкции</a><a class="footer__nav-item icon-merch" href="../../merch/">Мерч</a>
-            </nav>
+          <div class="instructions-mac__info">
+            <div class="title__left">Android TV</div>
+            <div class="instructions-mac__info-content">
+              <p>Наш сервис поддерживает только телевизоры на операционной системе Android.</p>
+              <p>Для подключения используйте приложение <a href="#" target="_blank">OpenVPN for Android.</a></p>
+            </div>
           </div>
-        </footer>
-        <div class="go-top"></div>
-      </div>
+          <div class="instructions-mac__info">
+            <div class="title__left">Android Auto</div>
+            <div class="instructions-mac__info-content">
+              <p>Настройка выполняется аналогично смартфонам на Android.</p>
+            </div>
+          </div>
+          <div class="instructions-mac__info">
+            <div class="title__left">Linux</div>
+            <div class="instructions-mac__info-content">
+              <p>1. Установка</p>
+              <p class="text-700">Debian / Ubuntu</p>
+              <div class="instructions__info-box"> 
+                <p>sudo apt update</p>
+                <p>sudo apt install -y openvpn</p>
+              </div>
+              <p class="text-700">CentOS / RHEL 7</p>
+              <div class="instructions__info-box"> 
+                <p>sudo yum install -y epel-release</p>
+                <p>sudo yum install -y openvpn</p>
+              </div>
+              <p class="text-700">CentOS / RHEL 8+ / Fedora</p>
+              <div class="instructions__info-box"> 
+                <p>sudo dnf install -y openvpn  </p>
+              </div>
+              <p class="text-700">Arch Linux</p>
+              <div class="instructions__info-box"> 
+                <p>sudo pacman -Sy --noconfirm openvpn   </p>
+              </div>
+              <p class="text-700">openSUSE</p>
+              <div class="instructions__info-box"> 
+                <p>sudo zypper refresh</p>
+                <p>sudo zypper install -y openvpn</p>
+              </div>
+              <p>2. Подключение с использованием  .ovpn файла</p>
+              <p>
+                <ol class="instructions__ul"> 
+                  <li>Скопируйте файл client.ovpn в каталог ~/openvpn/.</li>
+                  <li>Запустите OpenVPN
+                    <div class="instructions__info-box"> 
+                      <p>sudo openvpn --config ~/openvpn/client.ovpn</p>
+                    </div>
+                  </li>
+                  <li>Чтобы запустить OpenVPN в фоне
+                    <div class="instructions__info-box"> 
+                      <p>sudo nohup openvpn --config ~/openvpn/client.ovpn > ~/openvpn/openvpn.log 2>&1 &</p>
+                    </div>
+                  </li>
+                  <li>Для остановки используйте
+                    <div class="instructions__info-box"> 
+                      <p>pkill openvpn</p>
+                    </div>
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box__btn"><a class="btn btn-blue" href="https://t.me/vpn_time_support" target="_blank"><span class="icon icon-telegram"></span>
+            <div class="text">связаться с нами</div></a></div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <nav class="footer__nav"><a class="footer__nav-item icon-home" href="../../">Главная</a><a class="footer__nav-item icon-faq" href="../../faq/">Faq</a><a class="footer__nav-item icon-rules" href="../../rules/">Правила</a><a class="footer__nav-item icon-instructions" href="../../instructions/">Инструкции</a><a class="footer__nav-item icon-merch" href="../../merch/">Мерч</a>
+          </nav>
+        </div>
+      </footer>
+      <div class="go-top"></div>
       <script type="module" src="../../js/main.js"></script>
     </div>
   </body>
