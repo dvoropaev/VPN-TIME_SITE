@@ -44,7 +44,9 @@
 @media (width >= 768px) {
     .page {
         &-rules {
-            background-image: url("../img/bg2/bg-rules.png");
+            .page__bg{
+                background-image: url("../img/bg2/bg-rules.png");
+            }
         }
     }
 }
