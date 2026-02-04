@@ -114,10 +114,12 @@ main {
 }
 
 .page{
-    .page__bg{
-        background-image: url('../img/bg2/bg-pattern.svg');
-        background-size: 50rem;
-    }
+    background-image: url('../img/bg2/bg-pattern.svg');
+    background-size: 50rem;
+    // .page__bg{
+    //     background-image: url('../img/bg2/bg-pattern.svg');
+    //     background-size: 50rem;
+    // }
 }
 
 .ico__text{
@@ -131,6 +133,8 @@ main {
     width: 1.6rem;
     height: 1.6rem;
     background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
     &__netherlands{
         background-image: url(../img/svg/flag-netherlands.svg);
     }
@@ -138,9 +142,10 @@ main {
         background-image: url(../img/svg/flag-united-states.svg);
     }
 
-    &__torrent{
-        background-image: url(../img/svg/utorrent.svg);
+    &__pirate{
+        background-image: url(../img/svg/flag-pirate.svg);
     }
+
 }
 
 

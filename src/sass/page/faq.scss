@@ -33,13 +33,9 @@
 @media (width >= 768px) {
     .page {
         &-faq {
-
-            
-            //background-image: url("../img/bg/bg-faq.png");
-
-           background-image: url("../img/bg2/bg-faq.png");
-
-           
+            .page__bg{
+                background-image: url("../img/bg2/bg-faq.png");
+            }
         }
     }
 }
