@@ -185,6 +185,18 @@
 }
 
 @media (width >= 768px) {
+    .instructions {
+        &__info {
+            min-width: 700px;
+        }
+    }
+
+    .instructions-mac {
+        &__info {
+            min-width: 700px;
+        }
+    }
+
     .page {
         &-instructions {
             .page__bg{
