@@ -186,6 +186,19 @@
 
 @media (width >= 768px) {
     .page {
+        &-instructions,
+        &-instructions-mac,
+        &-instructions-windows,
+        &-instructions-iphone,
+        &-instructions-android,
+        &-instructions-other {
+            .container {
+                min-width: 540px;
+            }
+        }
+    }
+
+    .page {
         &-instructions {
             .page__bg{
                 background-image: url("../img/bg2/bg-instructions.png");
