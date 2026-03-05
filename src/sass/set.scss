@@ -1,75 +1,77 @@
 /* ==========  Global  ========== */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 2.4vw;
+  font-size: 2.4vw;
 
-    //1440  10/(414/100) = 2.4
-    height: 100%;
+  //1440  10/(414/100) = 2.4
+  height: 100%;
 }
 
 html,
 body {
-    position: relative;
-    width: 100%;
-    min-width: 320px;
+  position: relative;
+  width: 100%;
+  min-width: 320px;
 
-    // font-size: 10px;
+  // font-size: 10px;
 }
 
 body {
-    font-family: "Istok Web", sans-serif;
-    font-size: 1.6rem;
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.6rem;
 
-    // background: linear-gradient(180deg, #26D6FD 0%, #0035BA 100%);
+  // background: linear-gradient(180deg, #26D6FD 0%, #0035BA 100%);
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
 }
 
 .container {
-    width: calc(100% - 3.4rem);
-    margin: 0 1.7rem;
+  width: calc(100% - 3.4rem);
+  margin: 0 1.7rem;
 }
 
 .title {
-    padding-bottom: 2rem;
-    font-size: 2.4rem;
-    font-weight: 700;
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .text-700 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-ul{
-    list-style-position: inside;
-    padding-left: 2rem;
+ul {
+  list-style-position: inside;
+  padding-left: 2rem;
 }
 
-ul.empty-marker{
-    list-style: none;
-    padding-left: 2rem;
+ul.empty-marker {
+  list-style: none;
+  padding-left: 2rem;
 }
 
 main {
-    min-height: calc(100vh - 14.7rem);
+  min-height: calc(100vh - 14.7rem);
 }
 
-.img__box{
-    margin: 0 auto;
+.img__box {
+  margin: 0 auto;
 
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .go-top {
@@ -80,15 +82,17 @@ main {
   transform: translateY(-50%);
   cursor: pointer;
   border-radius: 50%;
-  background-color: #D9D9D9;
-  transition: opacity .5s ease-in-out, overflow .5s ease-in-out;
+  background-color: #d9d9d9;
+  transition:
+    opacity 0.5s ease-in-out,
+    overflow 0.5s ease-in-out;
   width: 5.2rem;
   height: 5.2rem;
   opacity: 0;
   overflow: hidden;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     background-image: url(../img/go-top.svg);
     width: 3.2rem;
     height: 3.6rem;
@@ -102,280 +106,286 @@ main {
 }
 
 .go-top--show {
-    bottom: 10%;
-    opacity: 1;
-    overflow: visible;
-    transition: opacity .5s ease-in-out, overflow .5s ease-in-out; 
+  bottom: 10%;
+  opacity: 1;
+  overflow: visible;
+  transition:
+    opacity 0.5s ease-in-out,
+    overflow 0.5s ease-in-out;
 }
 
-.cards{
-    display: flex;
-    justify-content: space-around;
+.cards {
+  display: flex;
+  justify-content: space-around;
 }
 
-.page{
-    background-image: url('../img/bg2/bg-pattern.svg');
-    background-size: 50rem;
-    // .page__bg{
-    //     background-image: url('../img/bg2/bg-pattern.svg');
-    //     background-size: 50rem;
-    // }
+.page {
+  background-image: url("../img/bg2/bg-pattern.svg");
+  background-size: 50rem;
+  // .page__bg{
+  //     background-image: url('../img/bg2/bg-pattern.svg');
+  //     background-size: 50rem;
+  // }
 }
 
-.ico__text{
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+.ico__text {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-.flag{
-    display: inline-block;
-    width: 1.6rem;
-    height: 1.6rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-shrink: 0;
-    &__netherlands{
-        background-image: url(../img/svg/flag-netherlands.svg);
-    }
-    &__usa{
-        background-image: url(../img/svg/flag-united-states.svg);
-    }
-    &__finland{
-        background-image: url(../img/svg/flag-finland.svg);
-    }
-    &__germany{
-        background-image: url(../img/svg/flag-germany.svg);
-    }
-    &__russia{
-        background-image: url(../img/svg/flag-russia.svg);
-    }
+.flag {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  &__netherlands {
+    background-image: url(../img/svg/flag-netherlands.svg);
+  }
+  &__usa {
+    background-image: url(../img/svg/flag-united-states.svg);
+  }
+  &__finland {
+    background-image: url(../img/svg/flag-finland.svg);
+  }
+  &__germany {
+    background-image: url(../img/svg/flag-germany.svg);
+  }
+  &__russia {
+    background-image: url(../img/svg/flag-russia.svg);
+  }
 
-    &__pirate{
-        background-image: url(../img/svg/flag-pirate.svg);
-    }
-
+  &__pirate {
+    background-image: url(../img/svg/flag-pirate.svg);
+  }
 }
 
-
-
-@media (width <= 320px){
-    html {
-        font-size: 8px;
-    }
+@media (width <= 320px) {
+  html {
+    font-size: 8px;
+  }
 }
 
 @media (width <= 767px) {
-    .m-none {
-        display: none;
+  .m-none {
+    display: none;
+  }
+
+  .go-top {
+    display: none;
+  }
+
+  .page {
+    main {
+      padding-bottom: 5.4rem;
+    }
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  .cloud {
+    &__left {
+      background-image: url(../img/bg2/bg-cloud.png);
+      height: 17rem;
+      width: 14rem;
+      display: block;
+      z-index: 5;
+      position: absolute;
+      background-size: 36rem;
+      background-position-x: -1.8rem;
+      background-position-y: -5rem;
     }
 
-    .go-top{
-        display: none;
+    &__right {
+      background-image: url(../img/bg2/bg-cloud.png);
+      height: 18rem;
+      width: 14rem;
+      display: block;
+      z-index: 5;
+      position: absolute;
+      right: 0;
+      background-size: 36rem;
+      background-position-x: 15rem;
+      background-position-y: -5rem;
     }
+  }
 
-    .page {
-        main {
-            padding-bottom: 5.4rem;
-        }
-    }
-
-    main{
-        min-height: 100vh;
-    }
-
-    .cloud{
-        &__left{
-            background-image: url(../img/bg2/bg-cloud.png);
-            height: 17rem;
-            width: 14rem;
-            display: block;
-            z-index: 5;
-            position: absolute;
-            background-size: 36rem;
-            background-position-x: -1.8rem;
-            background-position-y: -5rem;
-        }
-
-        &__right{
-            background-image: url(../img/bg2/bg-cloud.png);
-            height: 18rem;
-            width: 14rem;
-            display: block;
-            z-index: 5;
-            position: absolute;
-            right: 0;
-            background-size: 36rem;
-            background-position-x: 15rem;
-            background-position-y: -5rem;
-        }
-    }
-
-    .go-top--show{
-        right: .5rem;
-        bottom: 4rem;
-    }
+  .go-top--show {
+    right: 0.5rem;
+    bottom: 4rem;
+  }
 }
 
 @media (width >= 768px) {
-    html {
-        font-size: 0.694vw;
+  html {
+    font-size: 0.694vw;
+  }
+
+  .page {
+    .page__bg {
+      background-size: 144rem;
+    }
+  }
+
+  .container {
+    width: 60.5rem;
+    margin: 0 auto;
+  }
+
+  .cloud {
+    &__left {
+      background-image: url(../img/bg2/bg-cloud.png);
+      height: 58rem;
+      width: 34rem;
+      display: block;
+      z-index: 5;
+      position: absolute;
+      background-size: 92rem;
+      background-position-x: -1.8rem;
     }
 
+    &__right {
+      background-image: url(../img/bg2/bg-cloud.png);
+      height: 58rem;
+      width: 34rem;
+      display: block;
+      z-index: 5;
+      position: absolute;
+      right: 0;
+      background-size: 92rem;
+      background-position-x: 38.5rem;
+      background-position-y: -1.5rem;
+    }
+  }
 
+  .cloud-mini {
+    &__left {
+      &-1 {
+        display: block;
+        position: absolute;
+        width: 17rem;
+        height: 10rem;
+        top: 61rem;
+        background-image: url("../img/bg2/bg-cloud-mini.png");
+        background-size: 92rem;
+        background-position-y: 14rem;
+        background-position-x: -1rem;
+      }
 
-    .page{
-        .page__bg{
-            background-size: 144rem;
-        }
-
+      &-2 {
+        display: block;
+        position: absolute;
+        width: 15rem;
+        height: 10rem;
+        top: 82rem;
+        background-image: url("../img/bg2/bg-cloud-mini.png");
+        background-size: 92rem;
+        background-position-y: 13rem;
+        background-position-x: -71rem;
+        transform: scale(-1, 1);
+      }
     }
 
-    .container {
-        width: 60.5rem;
-        margin: 0 auto;
+    &__right {
+      &-1 {
+        display: block;
+        position: absolute;
+        width: 24rem;
+        height: 7rem;
+        top: 65rem;
+        right: 0;
+        background-image: url("../img/bg2/bg-cloud.png");
+        background-size: 120rem;
+        background-position-y: 7rem;
+        background-position-x: 27rem;
+      }
+
+      &-2 {
+        display: block;
+        position: absolute;
+        width: 24rem;
+        height: 17rem;
+        top: 82rem;
+        right: 0;
+        background-image: url("../img/bg2/bg-cloud-mini.png");
+        background-size: 92rem;
+        background-position-y: 17rem;
+        background-position-x: 24rem;
+      }
     }
-
-    .cloud{
-        &__left{
-            background-image: url(../img/bg2/bg-cloud.png);
-            height: 58rem;
-            width: 34rem;
-            display: block;
-            z-index: 5;
-            position: absolute;
-            background-size: 92rem;
-            background-position-x: -1.8rem;
-        }
-
-        &__right{
-            background-image: url(../img/bg2/bg-cloud.png);
-            height: 58rem;
-            width: 34rem;
-            display: block;
-            z-index: 5;
-            position: absolute;
-            right: 0;
-            background-size: 92rem;
-            background-position-x: 38.5rem;
-            background-position-y: -1.5rem;
-        }
-    }
-
-    .cloud-mini{
-        &__left{
-            &-1{
-                display: block;
-                position: absolute;
-                width: 17rem;
-                height: 10rem;
-                top: 61rem;
-                background-image: url('../img/bg2/bg-cloud-mini.png');
-                background-size: 92rem;
-                background-position-y: 14rem;
-                background-position-x: -1rem;
-            }
-
-            &-2{
-                display: block;
-                position: absolute;
-                width: 15rem;
-                height: 10rem;
-                top: 82rem;
-                background-image: url('../img/bg2/bg-cloud-mini.png');
-                background-size: 92rem;
-                background-position-y: 13rem;
-                background-position-x: -71rem;
-                transform: scale(-1, 1);
-            }
-
-        }
-
-        &__right{
-            &-1{
-                display: block;
-                position: absolute;
-                width: 24rem;
-                height: 7rem;
-                top: 65rem;
-                right: 0;
-                background-image: url('../img/bg2/bg-cloud.png');
-                background-size: 120rem;
-                background-position-y: 7rem;
-                background-position-x: 27rem;
-            }
-
-            &-2{
-                display: block;
-                position: absolute;
-                width: 24rem;
-                height: 17rem;
-                top: 82rem;
-                right: 0;
-                background-image: url('../img/bg2/bg-cloud-mini.png');
-                background-size: 92rem;
-                background-position-y: 17rem;
-                background-position-x: 24rem;
-            }                    
-        }
-    }
+  }
 }
 
 .img__box-clickable {
-    cursor: zoom-in;
+  cursor: zoom-in;
 }
 
 .lightbox-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .image-lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 20000;
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(0 0 0 / 75%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__img {
+    max-width: min(95vw, 120rem);
+    max-height: 90vh;
+    object-fit: contain;
+    touch-action: none;
+    user-select: none;
+    cursor: grab;
+    transition: transform 0.05s linear;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &__viewport {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
-    background-color: rgb(0 0 0 / 75%);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .25s ease;
+    overflow: hidden;
+    touch-action: none;
+  }
 
-    &.is-active {
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    &__img {
-        max-width: min(95vw, 120rem);
-        max-height: 90vh;
-        object-fit: contain;
-        touch-action: none;
-        cursor: grab;
-        transition: transform .05s linear;
-
-        &:active {
-            cursor: grabbing;
-        }
-    }
-
-    &__close {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        width: 4.4rem;
-        height: 4.4rem;
-        border: none;
-        border-radius: 50%;
-        background-color: #fff;
-        color: #111;
-        font-size: 2.6rem;
-        line-height: 1;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 1.2rem rgb(0 0 0 / 30%);
-    }
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #111;
+    font-size: 2.6rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1.2rem rgb(0 0 0 / 30%);
+  }
 }
