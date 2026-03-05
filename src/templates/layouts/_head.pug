@@ -6,6 +6,42 @@ meta(name="viewport" content="width=device-width, initial-scale=1")
 meta(name="theme-color" content="#fff")
 meta(name="format-detection" content="telephone=no")
 
+- var siteUrl = 'https://vpn-time.site'
+- var pageUrl = typeof pageUrl !== 'undefined' ? pageUrl : siteUrl
+- var seoTitle = typeof seoTitle !== 'undefined' ? seoTitle : 'VPN-TIME — безопасный интернет без подписки'
+- var seoDescription = typeof seoDescription !== 'undefined' ? seoDescription : 'VPN-TIME — VPN-сервис с почасовой оплатой: платите только за использованное время, без абонентской платы и скрытых условий.'
+- var seoImage = typeof seoImage !== 'undefined' ? seoImage : siteUrl + '/img/og-image.jpg'
+- var seoImageWidth = typeof seoImageWidth !== 'undefined' ? seoImageWidth : '1280'
+- var seoImageHeight = typeof seoImageHeight !== 'undefined' ? seoImageHeight : '850'
+- var seoImageAlt = typeof seoImageAlt !== 'undefined' ? seoImageAlt : 'VPN-TIME — безопасный интернет без подписки'
+
+meta(name="description" content=seoDescription)
+link(rel="canonical" href=pageUrl)
+
+meta(property="og:locale" content="ru_RU")
+meta(property="og:type" content="website")
+meta(property="og:site_name" content="VPN-TIME")
+meta(property="og:title" content=seoTitle)
+meta(property="og:description" content=seoDescription)
+meta(property="og:url" content=pageUrl)
+meta(property="og:image" content=seoImage)
+meta(property="og:image:secure_url" content=seoImage)
+meta(property="og:image:type" content="image/jpeg")
+meta(property="og:image:width" content=seoImageWidth)
+meta(property="og:image:height" content=seoImageHeight)
+meta(property="og:image:alt" content=seoImageAlt)
+
+meta(name="twitter:card" content="summary_large_image")
+meta(name="twitter:title" content=seoTitle)
+meta(name="twitter:description" content=seoDescription)
+meta(name="twitter:image" content=seoImage)
+meta(name="twitter:image:alt" content=seoImageAlt)
+meta(name="twitter:url" content=pageUrl)
+
+meta(itemprop="name" content=seoTitle)
+meta(itemprop="description" content=seoDescription)
+meta(itemprop="image" content=seoImage)
+
 if currentPage === 'home'
   meta(name="google-site-verification" content="W2SI6sWHqIFC0EvUhdG8HVMIylEiZ2t6IL8VqeKXBks")
 
