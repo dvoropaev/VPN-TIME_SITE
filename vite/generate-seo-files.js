@@ -2,7 +2,7 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 
 const DIST_DIR = path.resolve('dist');
-const DEFAULT_SITE_URL = 'https://vpn-time.site';
+const DEFAULT_SITE_URL = 'https://vtime.pro';
 
 function normalizeBaseUrl(url) {
   const withProtocol = /^https?:\/\//i.test(url) ? url : `https://${url}`;
