@@ -1,6 +1,8 @@
 {
   "excludedRoutes": [
-    "/dist/",
-    "/instructions/xray/"
+    " /dist/",
+    "/instructions/xray/",
+    "/instructions/open-vpn/"
+    "/instructions/trusttunnel/"
   ]
 }
