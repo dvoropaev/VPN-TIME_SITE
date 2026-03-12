@@ -1,7 +1,7 @@
 extends ../../../layouts/_layout.pug
 
 block vars
-  - var basePath = '../../'
+  - var basePath = '/'
   - var bodyClass = 'page-instructions'
   - var currentPage = 'instructions'
 
@@ -22,19 +22,19 @@ block content
 
         .instructions__btns
           .instructions__btns-box
-              a(href="./windows/" class="btn  btn-white")
+              a(href="/instructions/trusttunnel/windows/" class="btn  btn-white")
                   .text Windows
           .instructions__btns-box
-              a(href="./iphone/" class="btn  btn-white")
+              a(href="/instructions/trusttunnel/iphone/" class="btn  btn-white")
                   .text iPhone
           .instructions__btns-box
-              a(href="./mac/" class="btn  btn-white")
+              a(href="/instructions/trusttunnel/mac/" class="btn  btn-white")
                   .text macOS  
           .instructions__btns-box                      
-              a(href="./android/" class="btn  btn-white")
+              a(href="/instructions/trusttunnel/android/" class="btn  btn-white")
                   .text Android
           .instructions__btns-box
-              a(href="./other/" class="btn  btn-white")
+              a(href="/instructions/trusttunnel/other/" class="btn  btn-white")
                   .text Другое            
 
         
