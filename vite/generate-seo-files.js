@@ -30,11 +30,17 @@ function escapeRegex(pattern) {
 }
 
 function normalizePattern(pattern) {
-  if (pattern === '/') {
+  const trimmedPattern = pattern.trim();
+
+  if (trimmedPattern === '/') {
     return '/';
   }
 
-  return pattern.length > 1 && pattern.endsWith('/') ? pattern.slice(0, -1) : pattern;
+  const normalizedPattern = trimmedPattern.startsWith('/') ? trimmedPattern : `/${trimmedPattern}`;
+
+  return normalizedPattern.length > 1 && normalizedPattern.endsWith('/')
+    ? normalizedPattern.slice(0, -1)
+    : normalizedPattern;
 }
 
 function isRouteExcluded(route, excludedRoutes) {
@@ -57,7 +63,10 @@ async function loadSitemapConfig() {
     const rawConfig = await fs.readFile(SITEMAP_CONFIG_PATH, 'utf8');
     const parsedConfig = JSON.parse(rawConfig);
     const excludedRoutes = Array.isArray(parsedConfig.excludedRoutes)
-      ? parsedConfig.excludedRoutes.filter((route) => typeof route === 'string')
+      ? parsedConfig.excludedRoutes
+        .filter((route) => typeof route === 'string')
+        .map((route) => route.trim())
+        .filter(Boolean)
       : [];
 
     return { excludedRoutes };
