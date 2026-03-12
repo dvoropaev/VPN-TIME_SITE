@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const DIST_DIR = path.resolve('dist');
 const DEFAULT_SITE_URL = 'https://vtime.pro';
+const SITEMAP_CONFIG_PATH = path.resolve('vite/sitemap.config.json');
 
 function normalizeBaseUrl(url) {
   const withProtocol = /^https?:\/\//i.test(url) ? url : `https://${url}`;
@@ -22,6 +23,51 @@ function toRoute(filePath) {
   }
 
   return `/${normalized.replace(/\.html$/, '')}`;
+}
+
+function escapeRegex(pattern) {
+  return pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function normalizePattern(pattern) {
+  if (pattern === '/') {
+    return '/';
+  }
+
+  return pattern.length > 1 && pattern.endsWith('/') ? pattern.slice(0, -1) : pattern;
+}
+
+function isRouteExcluded(route, excludedRoutes) {
+  const normalizedRoute = normalizePattern(route);
+
+  return excludedRoutes.some((pattern) => {
+    const normalizedPattern = normalizePattern(pattern);
+
+    if (!normalizedPattern.includes('*')) {
+      return normalizedRoute === normalizedPattern;
+    }
+
+    const regexPattern = `^${escapeRegex(normalizedPattern).replace(/\\\*/g, '.*')}$`;
+    return new RegExp(regexPattern).test(normalizedRoute);
+  });
+}
+
+async function loadSitemapConfig() {
+  try {
+    const rawConfig = await fs.readFile(SITEMAP_CONFIG_PATH, 'utf8');
+    const parsedConfig = JSON.parse(rawConfig);
+    const excludedRoutes = Array.isArray(parsedConfig.excludedRoutes)
+      ? parsedConfig.excludedRoutes.filter((route) => typeof route === 'string')
+      : [];
+
+    return { excludedRoutes };
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return { excludedRoutes: [] };
+    }
+
+    throw error;
+  }
 }
 
 async function getHtmlFiles(dir, baseDir = dir) {
@@ -44,12 +90,14 @@ async function getHtmlFiles(dir, baseDir = dir) {
 }
 
 async function generateSitemap(siteUrl) {
+  const { excludedRoutes } = await loadSitemapConfig();
   const htmlFiles = await getHtmlFiles(DIST_DIR);
   const urls = htmlFiles
     .map((filePath) => ({
       route: toRoute(filePath),
       sourcePath: path.join(DIST_DIR, filePath),
     }))
+    .filter(({ route }) => !isRouteExcluded(route, excludedRoutes))
     .sort((a, b) => a.route.localeCompare(b.route));
 
   const lines = await Promise.all(urls.map(async ({ route, sourcePath }) => {
