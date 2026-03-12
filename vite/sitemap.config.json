@@ -1,0 +1,6 @@
+{
+  "excludedRoutes": [
+    "/dist/",
+    "/instructions/xray/"
+  ]
+}
