@@ -1,7 +1,7 @@
 extends ../../layouts/_layout.pug
 
 block vars
-  - var basePath = '../'
+  - var basePath = '/'
   - var bodyClass = 'page-instructions'
   - var currentPage = 'instructions'
 
@@ -45,7 +45,7 @@ block content
                 | Сервер, на котором разрешен торрент-трафик
 
             div.instructions__info-btn
-              a(href="./xray/" class="btn btn-green")
+              a(href="/instructions/xray/" class="btn btn-green")
                 span.text Настроить Xray
 
         .instructions__info
@@ -68,7 +68,7 @@ block content
                 | Сервер, на котором разрешен торрент-трафик
 
             div.instructions__info-btn
-              a(href="./open-vpn/" class="btn btn-green" )
+              a(href="/instructions/open-vpn/" class="btn btn-green" )
                 span.text Настроить OpenVPN
 
         .instructions__info
@@ -83,7 +83,7 @@ block content
             //     | Нидерланды
             //
             // div.instructions__info-btn
-            //   a(href="./trusttunnel/" class="btn btn-green" )
+            //   a(href="/instructions/trusttunnel/" class="btn btn-green" )
             //     span.text Настроить TrustTunnel
 
         
