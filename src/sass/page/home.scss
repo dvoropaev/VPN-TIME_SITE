@@ -20,6 +20,15 @@
 }
 
 .home {
+    &__info {
+        &-content {
+            p {
+                text-align: justify;
+                text-align-last: left;
+            }
+        }
+    }
+
     &__info-price {
         width: 100%;
 
