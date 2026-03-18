@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-iphone'
   - var canonicalPath = '/instructions/open-vpn/iphone/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка OpenVPN на iPhone",
+      "description": "Пошаговая инструкция по импорту ключа OpenVPN и подключению VPN на iPhone.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/open-vpn/iphone/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Установить OpenVPN Connect."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Открыть файл ключа из Telegram."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Импортировать файл в OpenVPN Connect."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подтвердить подключение и использовать переключатель VPN."
+        }
+      ]
+    }
+
 block title
   title Настройка на iPhone
 

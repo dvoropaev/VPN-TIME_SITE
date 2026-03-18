@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-iphone'
   - var canonicalPath = '/instructions/xray/iphone/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка Xray на iPhone",
+      "description": "Пошаговая инструкция по настройке Hiddify и импорту Xray-ключа на iPhone.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/xray/iphone/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Установить Hiddify из App Store."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Создать Xray-ключ в боте."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Добавить ключ в приложение."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подключиться и выбрать сервер при необходимости."
+        }
+      ]
+    }
+
 block title
   title Настройка на iPhone
 

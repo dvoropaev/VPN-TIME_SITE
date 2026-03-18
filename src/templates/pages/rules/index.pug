@@ -6,6 +6,21 @@ block vars
   - var currentPage = 'rules'
   - var canonicalPath = '/rules/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Правила VPN-TIME",
+      "description": "Правила использования сервиса VPN-TIME и перечень запрещённых сценариев использования.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/rules/",
+      "about": {
+        "@type": "Thing",
+        "name": "Правила использования VPN-сервиса"
+      }
+    }
+
 block title
   title Правила
 

@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-windows'
   - var canonicalPath = '/instructions/open-vpn/windows/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка OpenVPN на Windows",
+      "description": "Как установить OpenVPN Connect на Windows, импортировать ключ и управлять подключением.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/open-vpn/windows/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Скачать и установить OpenVPN Connect."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Сохранить ключ из Telegram-бота."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Импортировать файл ключа в OpenVPN Connect."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Включать и отключать VPN через приложение."
+        }
+      ]
+    }
+
 block title
   title Настройка на Windows
 

@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-android'
   - var canonicalPath = '/instructions/xray/android/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка Xray на Android",
+      "description": "Пошаговая инструкция по настройке Hiddify и импорту Xray-ключа на Android.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/xray/android/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Установить Hiddify."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Создать Xray-ключ в боте."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Добавить ключ через буфер обмена."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подключиться и при необходимости выбрать другую локацию."
+        }
+      ]
+    }
+
 block title
   title Настройка на Android
 

@@ -6,6 +6,43 @@ block vars
   - var currentPage = 'faq'
   - var canonicalPath = '/faq/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "name": "FAQ VPN-TIME",
+      "description": "Ответы на частые вопросы об оплате, устройствах и подключении VPN-TIME.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/faq/",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как работает оплата?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пополняете баланс в боте, а списание происходит поминутно за время активного подключения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие устройства поддерживаются?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Поддерживаются Android, iPhone, Windows, macOS, частично Android TV и отдельные устройства на Linux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему не могу подключиться?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Убедитесь, что баланс положительный и используется актуальный конфигурационный файл или ключ."
+          }
+        }
+      ]
+    }
+
 block title
   title Faq
 
