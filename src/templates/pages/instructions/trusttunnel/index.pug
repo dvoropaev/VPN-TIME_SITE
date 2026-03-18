@@ -6,6 +6,21 @@ block vars
   - var currentPage = 'instructions'
   - var canonicalPath = '/instructions/trusttunnel/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Инструкции TrustTunnel",
+      "url": "https://vtime.pro/instructions/trusttunnel/",
+      "description": "Страница выбора инструкций по настройке протокола TrustTunnel на разных устройствах.",
+      "inLanguage": "ru-RU",
+      "about": {
+        "@type": "Thing",
+        "name": "TrustTunnel"
+      }
+    }
+
 block title
   title Инструкции TrustTunnel
 

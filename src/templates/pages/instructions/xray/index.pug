@@ -6,6 +6,21 @@ block vars
   - var currentPage = 'instructions'
   - var canonicalPath = '/instructions/xray/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Инструкции Xray",
+      "url": "https://vtime.pro/instructions/xray/",
+      "description": "Выбор инструкций по настройке Xray для Windows, macOS, iPhone, Android и других устройств.",
+      "inLanguage": "ru-RU",
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Hiddify"
+      }
+    }
+
 block title
   title Инструкции Xray
 

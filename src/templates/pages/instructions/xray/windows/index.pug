@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-windows'
   - var canonicalPath = '/instructions/xray/windows/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка Xray на Windows",
+      "description": "Пошаговая инструкция по установке Hiddify на Windows и добавлению Xray-ключа.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/xray/windows/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Скачать и установить Hiddify."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Создать Xray-ключ в боте."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Добавить профиль из буфера обмена."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подключиться и выбрать сервер при необходимости."
+        }
+      ]
+    }
+
 block title
   title Настройка на Windows
 

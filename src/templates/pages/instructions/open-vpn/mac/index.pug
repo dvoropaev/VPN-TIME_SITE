@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-mac'
   - var canonicalPath = '/instructions/open-vpn/mac/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка OpenVPN на macOS",
+      "description": "Базовые шаги по настройке OpenVPN Connect на macOS через ключ из Telegram-бота.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/open-vpn/mac/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Установить OpenVPN Connect."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Сгенерировать и скачать файл ключа."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Открыть файл ключа в приложении."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Включить VPN через интерфейс OpenVPN Connect."
+        }
+      ]
+    }
+
 block title
   title Настройка на macOS
 

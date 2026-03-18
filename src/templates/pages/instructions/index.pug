@@ -6,6 +6,34 @@ block vars
   - var currentPage = 'instructions'
   - var canonicalPath = '/instructions/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Инструкции VPN-TIME",
+      "description": "Каталог инструкций по настройке Xray, OpenVPN и TrustTunnel для разных устройств.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/",
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "name": "Инструкции Xray",
+          "url": "https://vtime.pro/instructions/xray/"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Инструкции OpenVPN",
+          "url": "https://vtime.pro/instructions/open-vpn/"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Инструкции TrustTunnel",
+          "url": "https://vtime.pro/instructions/trusttunnel/"
+        }
+      ]
+    }
+
 block title
   title Инструкции
 

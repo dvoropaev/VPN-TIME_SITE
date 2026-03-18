@@ -6,6 +6,34 @@ block vars
   - var currentPage = 'instructions-other'
   - var canonicalPath = '/instructions/xray/other/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка Xray на других устройствах",
+      "description": "Страница для дополнительных инструкций по настройке Xray на других устройствах.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/xray/other/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Открыть страницу с инструкцией."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Уточнить поддержку устройства."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Следовать будущим шагам после публикации инструкции."
+        }
+      ]
+    }
+
 block title
   title Настройка на других устройствах 
 

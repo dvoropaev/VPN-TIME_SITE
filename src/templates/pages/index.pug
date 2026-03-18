@@ -5,6 +5,27 @@ block vars
   - var currentPage = 'home'
   - var canonicalPath = '/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "VPN-TIME",
+      "description": "VPN-TIME — сервис защищённого интернета с оплатой по времени использования без абонентской платы.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "VPN-TIME",
+        "url": "https://vtime.pro/"
+      },
+      "about": {
+        "@type": "Service",
+        "name": "VPN-TIME",
+        "serviceType": "VPN service"
+      }
+    }
+
 block title
   title VPN-TIME
 

@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-android'
   - var canonicalPath = '/instructions/open-vpn/android/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка OpenVPN на Android",
+      "description": "Пошаговая инструкция по сохранению .ovpn-файла и импорту его в OpenVPN Connect на Android.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/open-vpn/android/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Сохранить файл ключа в загрузки."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Установить OpenVPN Connect."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Выбрать Upload File и найти сохранённый ключ."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Импортировать профиль и подключиться."
+        }
+      ]
+    }
+
 block title
   title Настройка на Android
 

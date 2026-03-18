@@ -6,6 +6,39 @@ block vars
   - var currentPage = 'instructions-other'
   - var canonicalPath = '/instructions/open-vpn/other/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка OpenVPN на других устройствах",
+      "description": "Рекомендации по подключению OpenVPN на Android TV, Android Auto и Linux.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/open-vpn/other/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Выбрать подходящую платформу."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Установить OpenVPN-клиент."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Подготовить .ovpn-файл."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Подключиться с помощью конфигурации."
+        }
+      ]
+    }
+
 block title
   title Настройка на других устройствах 
 

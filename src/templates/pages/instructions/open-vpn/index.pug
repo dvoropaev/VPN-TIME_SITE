@@ -6,6 +6,21 @@ block vars
   - var currentPage = 'instructions'
   - var canonicalPath = '/instructions/open-vpn/'
 
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Инструкции OpenVPN",
+      "url": "https://vtime.pro/instructions/open-vpn/",
+      "description": "Выбор инструкций по настройке OpenVPN для Windows, macOS, iPhone, Android и других устройств.",
+      "inLanguage": "ru-RU",
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "OpenVPN Connect"
+      }
+    }
+
 block title
   title Инструкции OpenVPN
 

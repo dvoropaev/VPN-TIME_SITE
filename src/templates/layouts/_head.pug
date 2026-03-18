@@ -16,6 +16,9 @@ if currentPage === 'home'
 - var basePath = typeof basePath !== 'undefined' ? basePath : '/'
 - var canonicalPath = typeof canonicalPath !== 'undefined' ? canonicalPath : '/'
 - var canonicalBaseUrl = 'https://vtime.pro'
-link(rel="canonical" href=canonicalBaseUrl + canonicalPath)
+- var canonicalUrl = canonicalBaseUrl + canonicalPath
+link(rel="canonical" href=canonicalUrl)
+
+block structuredData
 link(rel="icon" href=basePath + "img/favicon.ico")
 link(rel="stylesheet" href=basePath + "css/main.css")
