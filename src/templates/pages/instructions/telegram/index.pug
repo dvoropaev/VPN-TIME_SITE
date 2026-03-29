@@ -24,19 +24,37 @@ block content
         .container
           .instructions-hero__image
 
-      .container
+.container
+  .instructions__info
+    .instructions__info-wrapper
+      .title Telegram-proxy
+      .instructions__info-content
+        p Перед подключением обязательно прочитайте инструкцию до конца.
+        p Telegram-proxy — это специальный прокси только для Telegram. Он работает быстрее и стабильнее для мессенджера, чем обычные VPN.
+        p В отличие от VPN, он не меняет весь интернет-трафик, а используется только внутри Telegram.
+      div.instructions__info-btn
+        a(href="tg://proxy?server=vdsinc-tmt-free.vtime.pro&port=443&secret=eecefeee711c931425dfadd1584b65da637674696d652e70726f" class="btn btn-green")
+          span.text Подключить
 
-        .instructions__info
-          .instructions__info-wrapper
-            .title Telegram-proxy
-            .instructions__info-content
-              p Перед подключением прочитайте данную инструкцию до конца.
+.container
+  .instructions__info
+    .instructions__info-wrapper
+      .title ВАЖНО
+      .instructions__info-content
+        p Telegram-proxy не работает вместе с включённым VPN — они конфликтуют.
+        p Что можно сделать:
+        p 1) Отключать VPN при использовании Telegram
+        p 2) Если используете happ — настройте Telegram в обход VPN (split tunneling)
 
-
-            div.instructions__info-btn
-              a(href="tg://proxy?server=vdsinc-tmt-free.vtime.pro&port=443&secret=eecefeee711c931425dfadd1584b65da637674696d652e70726f" class="btn btn-green")
-                span.text Подключить
-
+.container
+  .instructions__info
+    .instructions__info-wrapper
+      .title Если что-то пошло не так
+      .instructions__info-content
+        p Отключите прокси в Telegram:
+        p Зайдите в настройки → найдите "Proxy settings" → выключите "Use proxy".
+        p Если используете Telegram на компьютере:
+        p Зайдите в "Продвинутые соединения" и выберите "Использовать системный прокси".
 
 
 
