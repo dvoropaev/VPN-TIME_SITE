@@ -29,11 +29,21 @@ block content
           .instructions__info-wrapper
             .title Telegram-proxy
             .instructions__info-content
-              p(style="color: #d32f2f; font-style: italic;") Перед подключением обязательно прочитайте инструкцию до конца.
-              p Telegram-proxy — это специальный прокси только для Telegram. Он работает быстрее и стабильнее для мессенджера, чем обычные VPN.
-              p В отличие от VPN, он не меняет весь интернет-трафик, а используется только внутри Telegram.
-              p Использование telegram-proxy бесплатно.
-              p Чтобы подключиться, откройте эту страницу на том устройстве, которое хотите подключить, и нажмите «Подключить».
+              p(style="color: #d32f2f; font-style: italic;")
+                strong Перед подключением обязательно прочитайте инструкцию до конца.
+              p
+                strong Telegram-proxy
+                |  — это специальный прокси только для Telegram.
+              p Работает быстрее и стабильнее для мессенджера, чем обычные VPN.
+              p В отличие от VPN, не меняет весь интернет-трафик и используется только внутри Telegram.
+              p
+                strong Использование Telegram-proxy бесплатно.
+              p
+                strong Как подключиться:
+              ol
+                li Откройте эту страницу на устройстве, которое хотите подключить.
+                li Нажмите кнопку «Подключить».
+                li Подтвердите подключение в Telegram.
             div.instructions__info-btn
               a(href="tg://proxy?server=vdsinc-tmt-free.vtime.pro&port=443&secret=eecefeee711c931425dfadd1584b65da637674696d652e70726f" class="btn btn-green")
                 span.text Подключить
@@ -43,8 +53,11 @@ block content
           .instructions__info-wrapper
             .title ВАЖНО
             .instructions__info-content
-              p Telegram-proxy не работает вместе с включённым VPN — они конфликтуют.
-              p Что можно сделать:
+              p
+                strong Telegram-proxy не работает вместе с включённым VPN
+                |  — они конфликтуют.
+              p
+                strong Что можно сделать:
               ul
                 li Отключать VPN при использовании Telegram
                 li Если используете happ — настройте Telegram в обход VPN (split tunneling)
@@ -54,11 +67,20 @@ block content
           .instructions__info-wrapper
             .title Если что-то пошло не так
             .instructions__info-content
-              p Отключите прокси в Telegram:
-              p Зайдите в настройки → найдите "Proxy settings" → выключите "Use proxy".
-              p Если используете Telegram на компьютере:
-              p Зайдите в "Продвинутые соединения" и выберите "Использовать системный прокси".
-              p(style="color: #d32f2f; font-style: italic;") Сохраните эту страницу в закладки: здесь информация и ссылка для подключения будут периодически обновляться.
+              p
+                strong Отключите прокси в Telegram:
+              ul
+                li Зайдите в настройки.
+                li Найдите «Proxy settings».
+                li Выключите «Use proxy».
+              p
+                strong Если используете Telegram на компьютере:
+              ul
+                li Откройте «Продвинутые соединения».
+                li Выберите «Использовать системный прокси».
+              p(style="color: #d32f2f; font-style: italic;")
+                strong Сохраните эту страницу в закладки:
+                |  здесь информация и ссылка для подключения будут периодически обновляться.
 
 
 
