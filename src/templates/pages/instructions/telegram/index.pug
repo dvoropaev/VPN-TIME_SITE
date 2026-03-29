@@ -1,0 +1,48 @@
+extends ../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '/'
+  - var bodyClass = 'page-instructions'
+  - var currentPage = 'instructions-telegram'
+  - var canonicalPath = '/instructions/telegram'
+
+block structuredData
+  script(type='application/ld+json').
+    {
+
+    }
+
+block title
+  title Подключение к telegram-proxy
+
+block content
+  main
+    .content
+      section.instructions-hero
+        .hero__bg-trees
+        .hero__bg-server
+        .container
+          .instructions-hero__image
+
+      .container
+
+        .instructions__info
+          .instructions__info-wrapper
+            .title Telegram-proxy
+            .instructions__info-content
+              p Перед подключением прочитайте данную инструкцию до конца.
+              p Поддерживаются следующие локации:
+
+
+            div.instructions__info-btn
+              a(href="#" class="btn btn-green")
+                span.text Подключить
+
+
+
+
+    //-
+      .box__btn
+        a(href="https://t.me/vpn_time_support" class="btn btn-blue" target="_blank")
+          span.icon.icon-telegram
+          .text связаться с нами
