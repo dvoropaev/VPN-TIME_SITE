@@ -10,23 +10,69 @@ block structuredData
   script(type='application/ld+json').
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Магнит VPN-TIME",
-      "description": "Акриловый прямоугольный магнит VPN-TIME 5x7 см с промокодом на 100 часов VPN в подарок.",
+      "@type": "ItemList",
+      "name": "Мерч VPN-TIME",
       "url": "https://vtime.pro/merch/",
-      "image": [
-        "https://vtime.pro/img/page/merch/merch-1.jpg",
-        "https://vtime.pro/img/page/merch/merch-2.jpg"
-      ],
-      "brand": {
-        "@type": "Brand",
-        "name": "VPN-TIME"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://www.ozon.ru/search/?deny_category_prediction=true&from_global=true&text=%D0%9C%D0%B0%D0%B3%D0%BD%D0%B8%D1%82+%D0%BD%D0%B0+%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA&product_id=2545000968",
-        "availability": "https://schema.org/InStock"
-      }
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "position": 1,
+          "name": "Магнит VPN-TIME",
+          "description": "Акриловый прямоугольный магнит VPN-TIME 5x7 см. Даёт +10 к скорости интернета.",
+          "url": "https://vtime.pro/merch/",
+          "image": [
+            "https://vtime.pro/img/page/merch/merch-1.jpg",
+            "https://vtime.pro/img/page/merch/merch-2.jpg"
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "VPN-TIME"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.ozon.ru/product/magnit-vpn-time-akrilovyy-pryamougolnyy-5x7sm-2545000968/",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 2,
+          "name": "Большой коврик для мыши VPN-TIME",
+          "description": "Большой коврик для мыши VPN-TIME. Даёт +10 к маскировке трафика.",
+          "url": "https://vtime.pro/merch/",
+          "image": [
+            "https://vtime.pro/img/page/merch/merch-3.jpg"
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "VPN-TIME"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.ozon.ru/product/kovrik-dlya-myshki-3814789902/",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 3,
+          "name": "Маленький коврик для мыши VPN-TIME",
+          "description": "Маленький коврик для мыши VPN-TIME. Даёт +10 к маскировке трафика.",
+          "url": "https://vtime.pro/merch/",
+          "image": [
+            "https://vtime.pro/img/page/merch/merch-3.jpg"
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "VPN-TIME"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.ozon.ru/product/kovrik-dlya-myshki-3887054007/",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
     }
 
 block title
@@ -50,25 +96,29 @@ block content
         .home__info
           .home__info-wrapper
             .home__info-content
-              .cards 
-                .card.merch__img-1 
+              .cards
+                .card.merch__img-1
                   img(src="/img/page/merch/merch-1.jpg", alt="магнит VPN-TIME")
                 .card.merch__img-2
-                  img(src="/img/page/merch/merch-3.jpg", alt="мерч VPN-TIME")
-              p Магнит "VPN-TIME", акриловый, прямоугольный, 5x7см
-              p Мы выпустили первый мерч VPN-TIME —  оберег от роскомнадзора акриловый магнит с фирменными персонажами!
+                  img(src="/img/page/merch/merch-3.jpg", alt="коврики VPN-TIME")
+              p Мы выпустили мерч VPN-TIME — теперь у нас есть не только магниты, но и коврики для мыши.
               p -
-              p Он отлично смотрится на холодильнике, компьютере или любой металлической поверхности 😎
-              p 🎁 А на обратной стороне — промокод на 100 часов VPN в подарок!
+              p Магнит "VPN-TIME" — акриловый, прямоугольный, 5x7 см.
+              p Даёт +10 к скорости интернета и отлично смотрится на холодильнике, компьютере или любой металлической поверхности 😎
+              p -
+              p Коврики для мыши "VPN-TIME" теперь доступны в двух вариантах: большой и маленький.
+              p Оба дают +10 к маскировке трафика и помогают работать за компьютером с правильным настроем.
+              p -
+              p Выбирайте, что ближе именно вам: прокачать скорость интернета или усилить маскировку трафика.
               div
-                a(href="https://www.ozon.ru/search/?deny_category_prediction=true&from_global=true&text=%D0%9C%D0%B0%D0%B3%D0%BD%D0%B8%D1%82+%D0%BD%D0%B0+%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA&product_id=2545000968" class="btn btn-green" target="_blank")
-                  span.text купить на ozon
+                a(href="https://www.ozon.ru/product/magnit-vpn-time-akrilovyy-pryamougolnyy-5x7sm-2545000968/" class="btn btn-green" target="_blank")
+                  span.text купить магнит на ozon
               div
-                a(href="#" class="btn btn-green")
-                  span.text купить на Wildberries
+                a(href="https://www.ozon.ru/product/kovrik-dlya-myshki-3814789902/" class="btn btn-green" target="_blank")
+                  span.text купить большой коврик на ozon
               div
-                a(href="#" class="btn btn-green")
-                  span.text купить на Яндекс Маркете
+                a(href="https://www.ozon.ru/product/kovrik-dlya-myshki-3887054007/" class="btn btn-green" target="_blank")
+                  span.text купить маленький коврик на ozon
 
     //-
       .box__btn
