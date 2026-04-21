@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flag of Kazakhstan">
-  <rect width="64" height="64" fill="#00AFCA"/>
-  <rect x="4" y="0" width="4" height="64" fill="#F7D116"/>
-  <circle cx="36" cy="30" r="12" fill="#F7D116"/>
-  <g fill="#00AFCA">
-    <polygon points="36,14 38,20 44,20 39,24 41,30 36,26 31,30 33,24 28,20 34,20"/>
-  </g>
-  <path d="M22 42c4 3 16 3 20 0-1 5-5 8-10 8s-9-3-10-8z" fill="#F7D116"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" viewBox="0 0 64 48" fill="none" role="img" aria-label="Flag of Kazakhstan">
+  <rect width="64" height="48" fill="#00AFCA"/>
+  <rect x="3" width="3" height="48" fill="#F7D116"/>
+  <circle cx="36" cy="22" r="8" fill="#F7D116"/>
+  <path d="M27 31C30.5 29 33.5 28.2 36 28.2C38.5 28.2 41.5 29 45 31C41.8 31.4 38.8 31.6 36 31.6C33.2 31.6 30.2 31.4 27 31Z" fill="#F7D116"/>
 </svg>
