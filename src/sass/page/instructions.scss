@@ -23,6 +23,7 @@
     &-instructions-mac,
     &-instructions-windows,
     &-instructions-iphone,
+    &-instructions-iphone-region,
     &-instructions-android,
     &-instructions-other {
         main {
@@ -141,6 +142,7 @@
         &-instructions-mac,
         &-instructions-windows,
         &-instructions-iphone,
+        &-instructions-iphone-region,
         &-instructions-android,
         &-instructions-other {
             .hero{
@@ -149,7 +151,8 @@
             }
          }
 
-         &-instructions-iphone{
+         &-instructions-iphone,
+         &-instructions-iphone-region{
             .hero{
                 padding-top: 1.8rem;
             }
@@ -204,7 +207,8 @@
             }
         }
 
-        &-instructions-iphone {
+        &-instructions-iphone,
+        &-instructions-iphone-region {
             .page__bg{
                 background-image: url("../img/bg2/bg-instructions-iphone.png");
             }
