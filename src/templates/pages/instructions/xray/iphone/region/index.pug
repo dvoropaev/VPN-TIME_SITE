@@ -1,0 +1,121 @@
+extends ../../../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '/'
+  - var bodyClass = 'page-instructions-iphone-region'
+  - var currentPage = 'instructions-iphone-region'
+  - var canonicalPath = '/instructions/xray/iphone/region/'
+
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Смена региона App Store на iOS",
+      "description": "Инструкция по смене региона Apple ID на iPhone для установки приложений из App Store.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/xray/iphone/region/",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Открыть App Store и нажать на аватар профиля."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Перейти в настройки профиля."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Открыть раздел Страна/Регион."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Выбрать Соединенные Штаты."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Подтвердить изменения."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Выбрать способ оплаты Нет и заполнить адрес."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Нажать Готово."
+        }
+      ]
+    }
+
+block title
+  title Смена региона App Store на iOS
+
+block content
+  main
+    .content
+      section.hero
+        .hero__bg-trees
+        .container
+          .instructions-iphone-hero__image
+
+      .container
+        .instructions-mac__info
+          .title Смена региона App Store на iOS
+          .instructions-mac__info-content
+              p Если нужное приложение недоступно в App Store, смените регион Apple ID на Соединенные Штаты по инструкции ниже.
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 1. Зайдите в App Store и нажмите на аватарку своего профиля.
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/1.jpg", alt="Открыть профиль в App Store")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 2. Перейдите в настройки своего профиля.
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/2.jpg", alt="Перейти в настройки профиля Apple ID")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 3. Нажмите на "Страна/Регион".
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/3.jpg", alt="Открыть раздел Страна или регион")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 4. Найдите и выберите Соединенные Штаты.
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/4.jpg", alt="Выбрать регион Соединенные Штаты")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 5. Подтвердите все изменения.
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/5.jpg", alt="Подтвердить смену региона App Store")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 6. В способе оплаты укажите "Нет", а адрес заполните как указано ниже.
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/6.jpg", alt="Указать способ оплаты Нет и заполнить адрес")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+              p 7. Нажмите "Готово".
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/iphone/region/7.jpg", alt="Нажать Готово для сохранения региона")
