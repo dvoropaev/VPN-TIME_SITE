@@ -19,22 +19,27 @@ block structuredData
         {
           "@type": "HowToStep",
           "position": 1,
-          "name": "Скачать и установить Hiddify."
+          "name": "Скачать и установить Happ."
         },
         {
           "@type": "HowToStep",
           "position": 2,
-          "name": "Создать Xray-ключ в боте."
+          "name": "Создать и скопировать Xray-ключ в боте."
         },
         {
           "@type": "HowToStep",
           "position": 3,
-          "name": "Добавить профиль из буфера обмена."
+          "name": "Вставить Xray-ключ в Happ."
         },
         {
           "@type": "HowToStep",
           "position": 4,
-          "name": "Подключиться и при необходимости сменить сервер."
+          "name": "Подключиться."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Обновить список серверов и локаций."
         }
       ]
     }
@@ -55,13 +60,22 @@ block content
         .instructions-mac__info
           .title Настройка Xray на macOS
           .instructions-mac__info-content
-              p Скачайте <a href="https://github.com/hiddify/hiddify-next/releases/download/v2.5.7/Hiddify-MacOS.dmg" target="_blank">Hiddify</a> и установите его.
+              p Скачайте <a href="https://github.com/happ-proxy" target="_blank">Happ</a> (<a href="https://files-hub.com/download/macos/latest?arch=universal" target="_blank">зеркало</a>) и установите.
 
       .container
         .instructions-mac__info
           // .title Настройка на Windows xray
           .instructions-mac__info-content
-              p После установки запустите приложение Hiddify и нажмите <b>"Новый профиль"</b>.
+              p Если вы ещё не сделали Xray-ключ — зайдите в бот и сделайте новый ключ, указав тип подключения <b>"xray"</b>.
+              p Скопируйте новый ключ из бота (он похож на URL)
+          .img__box.win-2
+              img(src="/img/page/instructions/xray/windows/3.png", alt="")
+
+      .container
+        .instructions-mac__info
+          // .title Настройка на Windows xray
+          .instructions-mac__info-content
+              p Запустите Happ и вставьте скопированный Xray-ключ в поле.
           .img__box.win-2
               img(src="/img/page/instructions/xray/windows/4.png", alt="")
 
@@ -69,17 +83,7 @@ block content
         .instructions-mac__info
           // .title Настройка на Windows xray
           .instructions-mac__info-content
-              p Если вы ещё не сделали Xray-ключ — зайдите в бота и сделайте новый ключ, указав тип подключения <b>"xray"</b>.
-              p Скопируйте новый ключ из бота (он похож на URL)
-          .img__box.win-2
-              img(src="/img/page/instructions/xray/windows/copy-url.png", alt="")
-
-      .container
-        .instructions-mac__info
-          // .title Настройка на Windows xray
-          .instructions-mac__info-content
-              p Вернитесь в приложение Hiddify и нажмите <b>"Добавить из буфера обмена"</b>.
-              p Если при добавлении возникает ошибка - убедитесь, правильно ли вы скопировали URL
+              p Нажмите на большую круглую кнопку для подключения.
           .img__box.win-2
               img(src="/img/page/instructions/xray/windows/5.png", alt="")
 
@@ -87,33 +91,9 @@ block content
         .instructions-mac__info
           // .title Настройка на Windows xray
           .instructions-mac__info-content
-              p Нажмите на большую круглую кнопку для подключения.
-          .img__box.win-2
-              img(src="/img/page/instructions/xray/windows/6.png", alt="")
-
-      .container
-        .instructions-mac__info
-          // .title Настройка на Windows xray
-          .instructions-mac__info-content
-              p Сервер и локация будут выбраны автоматически. Для ручного выбора перейдите в меню <b>"Прокси"</b>.
-          .img__box.win-2
-              img(src="/img/page/instructions/xray/windows/7.png", alt="")
-
-      .container
-        .instructions-mac__info
-          // .title Настройка на Windows xray
-          .instructions-mac__info-content
-              p Вы увидите список доступных локаций/серверов. В случае возникновения проблем со скоростью/доступом рекомендуем попробовать разные сервера из этого списка.
-          .img__box.win-2
-              img(src="/img/page/instructions/xray/windows/8.png", alt="")
-
-      .container
-        .instructions-mac__info
-          // .title Настройка на Windows xray
-          .instructions-mac__info-content
               p Рекомендуем регулярно нажимать на круглую стрелку, чтобы приложение обновляло список доступных серверов/локаций.
           .img__box.win-2
-              img(src="/img/page/instructions/xray/windows/9.png", alt="")
+              img(src="/img/page/instructions/xray/windows/6.png", alt="")
 
 
 
