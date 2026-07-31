@@ -1,0 +1,72 @@
+extends ../../../../layouts/_layout.pug
+
+block vars
+  - var basePath = '/'
+  - var bodyClass = 'page-instructions-other'
+  - var currentPage = 'instructions-other'
+  - var canonicalPath = '/instructions/xray/androidtv/'
+
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Настройка Xray на Android TV",
+      "description": "Инструкция по подключению к VPN-TIME (Xray) на Android TV через Happ.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/instructions/xray/androidtv/",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Установить Happ на Android TV." },
+        { "@type": "HowToStep", "position": 2, "name": "Запустить Happ и поделиться через веб." },
+        { "@type": "HowToStep", "position": 3, "name": "Получить одноразовый код." },
+        { "@type": "HowToStep", "position": 4, "name": "Создать ключ в Telegram-боте и отправить одноразовый код." },
+        { "@type": "HowToStep", "position": 5, "name": "Выбрать сервер и включить VPN." }
+      ]
+    }
+
+block title
+  title Настройка Xray на Android TV
+
+block content
+  main
+    .content
+      section.hero
+        .hero__bg-trees
+        .container
+          .instructions-other-hero__image
+
+      .container
+        .instructions-mac__info
+          .title Настройка Xray на Android TV
+          .instructions-mac__info-content
+            p Установите <a href="https://play.google.com/store/apps/details?id=com.happproxy" target="_blank">Happ</a> на ваш Android TV.
+          .img__box.win-2
+            img(src="/img/page/instructions/xray/adnroidtv/1.png", alt="Установить Happ на Android TV")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+            p Запустите Happ и нажмите на кнопку <b>«Поделиться через Веб»</b>.
+          .img__box.win-2
+            img(src="/img/page/instructions/xray/adnroidtv/2.png", alt="Поделиться через веб в Happ")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+            p На экране появится одноразовый код.
+          .img__box.win-2
+            img(src="/img/page/instructions/xray/adnroidtv/3.png", alt="Одноразовый код в Happ")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+            p В Telegram-боте создайте новый ключ и нажмите <b>«Установить на AndroidTV»</b>. Затем отправьте код, полученный на предыдущем шаге. Ключ будет установлен на ваш телевизор в течение двух минут.
+          .img__box.win-2
+            img(src="/img/page/instructions/xray/adnroidtv/4.png", alt="Установить ключ на Android TV через Telegram-бота")
+
+      .container
+        .instructions-mac__info
+          .instructions-mac__info-content
+            p Используйте список серверов слева, чтобы выбрать локацию. Для включения и выключения используйте большую круглую кнопку.
+          .img__box.win-2
+            img(src="/img/page/instructions/xray/adnroidtv/5.png", alt="Выбрать сервер и включить VPN в Happ")
