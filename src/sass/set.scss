@@ -135,6 +135,24 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     flex-shrink: 0;
+    &__sweden{
+        background-image: url(../img/svg/flag-sweden.svg);
+    }
+    &__france{
+        background-image: url(../img/svg/flag-france.svg);
+    }
+    &__switzerland{
+        background-image: url(../img/svg/flag-switzerland.svg);
+    }
+    &__hong-kong{
+        background-image: url(../img/svg/flag-hong-kong.svg);
+    }
+    &__latvia{
+        background-image: url(../img/svg/flag-latvia.svg);
+    }
+    &__belgium{
+        background-image: url(../img/svg/flag-belgium.svg);
+    }
     &__netherlands{
         background-image: url(../img/svg/flag-netherlands.svg);
     }
