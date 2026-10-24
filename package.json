@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test": "node --test",
     "pug:compile": "pug src/templates/pages --out dist --pretty",
     "js:compile": "babel src/js --out-file dist/js/main.js --source-maps",
     "sass:compile": "sass src/sass/main.sass:dist/css/main.css",
