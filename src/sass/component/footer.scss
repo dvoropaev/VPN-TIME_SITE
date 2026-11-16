@@ -134,7 +134,17 @@
         height: 8.8rem;
 
         .container {
-            width: 55rem;
+            width: max-content;
+        }
+
+        &__nav {
+            align-items: center;
+            gap: 1.6rem;
+
+            &-item {
+                flex-shrink: 0;
+                white-space: nowrap;
+            }
         }
     }
 }

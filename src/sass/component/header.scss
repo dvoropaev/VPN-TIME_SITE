@@ -2,14 +2,17 @@
     display: none;
 
     .container {
-        width: 55rem;
+        width: max-content;
     }
 
     &__nav {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        gap: 1.6rem;
 
         &-item {
+            flex-shrink: 0;
+            white-space: nowrap;
             padding: .2rem .8rem;
             border-radius: 3.5rem;
             color: #000;
