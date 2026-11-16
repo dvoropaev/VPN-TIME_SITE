@@ -110,6 +110,14 @@
                     }
                 }
 
+                &.icon-about {
+                    &::before {
+                        background-image: url(../img/ico/menu/about.svg);
+                        width: 2.5rem;
+                        height: 2.3rem;
+                    }
+                }
+
                 &.active{
                     color: #25D5FC;
                     &::before{
@@ -126,7 +134,7 @@
         height: 8.8rem;
 
         .container {
-            width: 45rem;
+            width: 55rem;
         }
     }
 }

@@ -1,0 +1,53 @@
+extends ../../layouts/_layout.pug
+
+block vars
+  - var basePath = '/'
+  - var bodyClass = 'page-instructions page-about'
+  - var currentPage = 'about'
+  - var canonicalPath = '/about/'
+
+block structuredData
+  script(type='application/ld+json').
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "О нас — VPN-TIME",
+      "description": "YouTube-канал VPN-TIME и статьи о проекте на Хабре.",
+      "inLanguage": "ru-RU",
+      "url": "https://vtime.pro/about/"
+    }
+
+block title
+  title О нас — VPN-TIME
+
+block content
+  main
+    .content
+      section.instructions-hero(aria-label="О нас")
+        .hero__bg-trees
+        .hero__bg-server
+        .container
+          .instructions-hero__image(role="img" aria-label="О нас — VPN-TIME")
+
+      .container
+        .instructions__info
+          .instructions__info-wrapper
+            h2.title YouTube-канал
+            .instructions__info-content
+              p У нас есть YouTube-канал VPN-TIME.
+            .instructions__info-btn
+              a(href="https://www.youtube.com/@VPN-TIME" class="btn btn-green" target="_blank" rel="noopener noreferrer")
+                span.text Перейти на YouTube
+
+        .instructions__info
+          .instructions__info-wrapper
+            h2.title Статьи
+            .instructions__info-content
+              p Читайте наши статьи на Хабре.
+            .instructions__btns
+              .instructions__btns-box
+                a(href="https://habr.com/ru/articles/895430/" class="btn btn-green" target="_blank" rel="noopener noreferrer")
+                  span.text Статья 1
+              .instructions__btns-box
+                a(href="https://habr.com/ru/articles/1098798/" class="btn btn-green" target="_blank" rel="noopener noreferrer")
+                  span.text Статья 2
