@@ -71,13 +71,8 @@
 .page-about {
     .instructions-hero__image {
         background-image: url(../img/hero/about.png);
-        background-image: image-set(
-            url(../img/hero/about.png) 1x,
-            url(../img/hero/about-2x.png) 2x
-        );
 
-        @media (width >= 534px) {
-            // At 25rem with a 2.4vw root size, the image exceeds the 320px source.
+        @media (width >= 768px) {
             background-image: url(../img/hero/about-2x.png);
         }
     }
