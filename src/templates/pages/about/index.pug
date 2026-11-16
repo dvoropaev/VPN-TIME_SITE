@@ -1,3 +1,4 @@
+
 extends ../../layouts/_layout.pug
 
 block vars
@@ -12,7 +13,7 @@ block structuredData
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "name": "О нас — VPN-TIME",
-      "description": "YouTube-канал VPN-TIME и статьи о проекте на Хабре.",
+      "description": "YouTube-канал VPN-TIME, проект SINVER и статьи на Хабре.",
       "inLanguage": "ru-RU",
       "url": "https://vtime.pro/about/"
     }
@@ -34,21 +35,45 @@ block content
           .instructions__info-wrapper
             h2.title YouTube-канал
             .instructions__info-content
-              p У нас есть YouTube-канал VPN-TIME.
-              img.about__youtube-image(src="/img/page/about/youtube.png" alt="Видео на YouTube-канале VPN-TIME" width="637" height="392")
+              img.about__youtube-image(
+                src="/img/page/about/youtube.png"
+                alt="Видео на YouTube-канале VPN-TIME"
+                width="637"
+                height="392"
+                style="margin-bottom: 20px;"
+              )
+              p На своём канале мы рассказываем о блокировках интернета, технологиях их обхода и о том, что происходит за кулисами VPN-индустрии. Делимся новостями, собственным опытом и интересными историями.
             .instructions__info-btn
               a(href="https://www.youtube.com/@VPN-TIME" class="btn btn-green" target="_blank" rel="noopener noreferrer")
                 span.text Перейти на YouTube
 
         .instructions__info
           .instructions__info-wrapper
+            h2.title SINVER
+            .instructions__info-content
+              img.about__youtube-image(
+                src="/img/page/about/sinver.jpg"
+                alt="SINVER — управление IT-инфраструктурой"
+                style="margin-bottom: 20px;"
+              )
+              p Наш собственный Open Source проект для инвентаризации серверов, IP-адресов, доменов и управления DNS-записями. Разрабатывается как единый источник актуальной информации об IT-инфраструктуре (Source of Truth) и уже используется в VPN-TIME.
+              p
+                a(href="https://github.com/dvoropaev/SINVER" target="_blank" rel="noopener noreferrer") Исходный код на GitHub
+              p
+                a(href="https://habr.com/ru/articles/1091816/" target="_blank" rel="noopener noreferrer") Статья о SINVER на Хабре
+
+        .instructions__info
+          .instructions__info-wrapper
             h2.title Статьи
             .instructions__info-content
-              p Читайте наши статьи на Хабре.
-            .instructions__btns
-              .instructions__btns-box
-                a(href="https://habr.com/ru/articles/895430/" class="btn btn-green" target="_blank" rel="noopener noreferrer")
-                  span.text Статья 1
-              .instructions__btns-box
-                a(href="https://habr.com/ru/articles/1098798/" class="btn btn-green" target="_blank" rel="noopener noreferrer")
-                  span.text Статья 2
+              p На Хабре мы делимся опытом создания и развития VPN-TIME, рассказываем о технических решениях, сложностях и результатах работы.
+
+              h3 Как я свой VPN-сервис делал
+              p История создания VPN-TIME: от идеи собственного VPN до запуска полноценного сервиса. Выбор модели оплаты, разработка инфраструктуры, первые пользователи, расходы и результаты.
+              p
+                a(href="https://habr.com/ru/articles/895430/" target="_blank" rel="noopener noreferrer") Читать статью на Хабре
+
+              h3 Как я свой VPN-сервис развивал
+              p Продолжение истории VPN-TIME. Переход с OpenVPN на Xray, развитие биллинга, новые технические решения, мониторинг, работа с блокировками и опыт эксплуатации сервиса.
+              p
+                a(href="https://habr.com/ru/articles/1098798/" target="_blank" rel="noopener noreferrer") Читать статью на Хабре
